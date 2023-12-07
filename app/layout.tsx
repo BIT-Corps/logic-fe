@@ -1,10 +1,9 @@
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import { theme } from "./lib";
 
 export const metadata: Metadata = {
   title: "LOGIC",
@@ -26,8 +25,8 @@ export default function RootLayout({
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body className={inter.className}>
-        <MantineProvider>{children}</MantineProvider>
+      <body>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );
