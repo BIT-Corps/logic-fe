@@ -27,7 +27,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <Button variant="filled" color="orange">
+            <Button variant="filled" color="red.6">
               Donate
             </Button>
           </nav>
