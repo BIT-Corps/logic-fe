@@ -2,6 +2,7 @@ import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import type { Metadata } from "next";
 import "./globals.css";
+import { theme } from "./lib";
 
 export const metadata: Metadata = {
   title: "LOGIC",
@@ -24,7 +25,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );

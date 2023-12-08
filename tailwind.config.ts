@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         "lg-dark": "#1D1D1D",
         "lg-white": "#E3E3E3",
-        "lg-red": "#D45E5E",
+        "lg-red-light": "#D45E5E",
+        "lg-red-dark": "#913B3B",
       },
       fontFamily: {
         bebas: ["BebasNeue"],
