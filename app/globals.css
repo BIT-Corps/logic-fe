@@ -33,5 +33,14 @@
   }
 }
 
-@layer base {
+@layer components {
+  .hero {
+    @apply bg-center bg-no-repeat bg-cover !important;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.36) 0%,
+        rgba(0, 0, 0, 0.36) 100%
+      ),
+      url("./assets/images/hero.jpeg"), lightgray 50%;
+  }
 }

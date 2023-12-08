@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "lg-black": "#222222",
         "lg-dark": "#1D1D1D",
         "lg-white": "#E3E3E3",
         "lg-red-light": "#D45E5E",
