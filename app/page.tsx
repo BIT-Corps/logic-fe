@@ -1,5 +1,6 @@
 import { Button } from "@mantine/core";
-import { MantineLogo } from "@mantinex/mantine-logo";
+import Image from "next/image";
+import { LogicLogo } from "./assets";
 
 const links = [
   { link: "/about", label: "Expressions" },
@@ -13,9 +14,11 @@ const links = [
 export default function Home() {
   return (
     <main>
-      <header className="h-20 bg-lg-dark">
+      <header className="h-24 bg-lg-dark">
         <section className="container mx-auto h-full flex items-center justify-between">
-          <MantineLogo color="blue" size={28} />
+          <div className="logo relative w-20 h-20">
+            <Image src={LogicLogo} alt="" className="absolute w-full h-full" />
+          </div>
           <nav className="flex items-center justify-between gap-x-8">
             <ul className="flex items-center justify-start space-x-5">
               {links.map((link) => (
