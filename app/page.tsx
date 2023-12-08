@@ -1,7 +1,12 @@
+"use client";
+
 import { Button } from "@mantine/core";
 import Image from "next/image";
+import { useState } from "react";
 import { FaYoutube } from "react-icons/fa";
-import { LogicLogo } from "./assets";
+import { GoPlay } from "react-icons/go";
+import ModalVideo from "react-modal-video";
+import { CrossPositionImg, LogicLogo, MKImg, TDIALImg } from "./assets";
 
 const links = [
   { link: "/about", label: "Expressions" },
@@ -13,6 +18,8 @@ const links = [
 ];
 
 export default function Home() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <main>
       <header className="h-24 bg-lg-dark">
@@ -60,12 +67,70 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="border-red-400 border-4 p-20">
-        <div className="border container mx-auto">
+      <section className="lg-section-white">
+        <div className="lg-container">
           <div className="uppercase">
             <h4 className="text-6xl">Top Rated Sermons</h4>
-            <p>Equip yourself with our top rated sermons</p>
+            <p className="text-lg-gray">
+              Equip yourself with our top rated sermons
+            </p>
           </div>
+
+          <section className="grid grid-cols-3 gap-x-8 py-14">
+            {[
+              {
+                id: 0,
+                title: "Cross Position",
+                subTitle: "Dr Flourish Peters",
+                image: CrossPositionImg,
+                videoId: "1aTPZdtY1Pg",
+              },
+              {
+                id: 1,
+                title: "Morning Koinonia",
+                subTitle: "Dr Flourish Peters",
+                image: MKImg,
+                videoId: "1aTPZdtY1Pg",
+              },
+              {
+                id: 2,
+                title: "The Devil Is A Liar",
+                subTitle: "Dr Flourish Peters",
+                image: TDIALImg,
+                videoId: "1aTPZdtY1Pg",
+              },
+            ].map(({ id, title, subTitle, image, videoId }) => (
+              <>
+                <div
+                  key={id}
+                  className="relative"
+                  onClick={() => setOpen(true)}
+                >
+                  <div className="img relative w-full h-72 rounded-lg cursor-pointer hover:scale-105 transition-all duration-200">
+                    <Image
+                      src={image}
+                      alt=""
+                      className="w-full h-full absolute object-cover rounded-md brightness-50"
+                    />
+                    <div className="absolute top-[44%] left-[44%]">
+                      <GoPlay size={50} color="white" />
+                    </div>
+                  </div>
+                  <div className="uppercase my-3">
+                    <h6 className="text-4xl">{title}</h6>
+                    <p className="text-lg-gray">{subTitle}</p>
+                  </div>
+                </div>
+                <ModalVideo
+                  channel="youtube"
+                  autoplay
+                  isOpen={isOpen}
+                  videoId={videoId}
+                  onClose={() => setOpen(false)}
+                />
+              </>
+            ))}
+          </section>
         </div>
       </section>
     </main>

@@ -44,3 +44,12 @@
       url("./assets/images/hero.jpeg"), lightgray 50%;
   }
 }
+
+@layer utilities {
+  .lg-container {
+    @apply container mx-auto;
+  }
+  .lg-section-white {
+    @apply p-24 text-lg-black;
+  }
+}

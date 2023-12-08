@@ -1,6 +1,7 @@
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import type { Metadata } from "next";
+import "node_modules/react-modal-video/scss/modal-video.scss";
 import "./globals.css";
 import { theme } from "./lib";
 

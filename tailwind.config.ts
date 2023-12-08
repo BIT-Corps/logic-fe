@@ -12,6 +12,7 @@ const config: Config = {
         "lg-black": "#222222",
         "lg-dark": "#1D1D1D",
         "lg-white": "#E3E3E3",
+        "lg-gray": "#8C8C8C",
         "lg-red-light": "#D45E5E",
         "lg-red-dark": "#913B3B",
       },
