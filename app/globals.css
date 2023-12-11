@@ -31,6 +31,12 @@
   h6 {
     font-family: "BebasNeue";
   }
+
+  .mantine-TextInput-input {
+    @apply uppercase py-5 px-2 text-lg-gray-light !important;
+    border-bottom: 2px solid #aeaeae !important;
+    border-radius: 0px !important;
+  }
 }
 
 @layer components {
@@ -44,12 +50,15 @@
       url("./assets/images/hero.jpeg"), lightgray 50%;
   }
   .subscribe_box {
-    @apply bg-center bg-no-repeat bg-cover h-[800px] rounded-xl !important;
+    @apply bg-center bg-no-repeat bg-cover h-[800px] rounded-2xl !important;
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.7) 50%,
-        rgba(0, 0, 0, 0.9) 100%
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba(0, 0, 0, 0.7) 60%,
+        rgba(0, 0, 0, 0.7) 40%,
+        rgba(0, 0, 0, 0.8) 80%,
+        rgba(0, 0, 0, 0.8) 100%
       ),
       url("./assets/images/kids.jpeg"), lightgray 90%;
   }

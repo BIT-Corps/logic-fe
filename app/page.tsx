@@ -87,18 +87,18 @@ export default function Home() {
             ))}
           </section>
 
-          <section className="subscribe_box text-white flex flex-col items-center justify-center text-center uppercase space-y-14">
+          <section className="subscribe_box text-lg-gray-light flex flex-col items-center justify-center text-center uppercase space-y-14">
             <div>
               <h4 className="text-7xl">
                 Let us show you <br /> the love of God
               </h4>
               <p className="text-sm">We are concerned about your growth!</p>
             </div>
-            <div className="w-3/12">
+            <div className="w-3/12 uppercase">
               <TextInput
-                placeholder="Text input"
+                placeholder="Subscribe to our newsletter"
                 variant="unstyled"
-                rightSection={<FaLongArrowAltRight color="red" />}
+                rightSection={<FaLongArrowAltRight color="white" />}
               />
             </div>
           </section>
