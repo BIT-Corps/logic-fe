@@ -3,11 +3,11 @@ import { Button } from "@mantine/core";
 import Image from "next/image";
 
 const links = [
-  { link: "/about", label: "Expressions" },
-  { link: "/pricing", label: "Resources" },
-  { link: "/learn", label: "Trainings" },
+  { link: "/expressions", label: "Expressions" },
+  { link: "/resources", label: "Resources" },
+  { link: "/trainings", label: "Trainings" },
   { link: "/community", label: "Events" },
-  { link: "/events", label: "About Us" },
+  { link: "/about", label: "About Us" },
   { link: "/contact", label: "Contact" },
 ];
 
@@ -15,7 +15,7 @@ type Props = {};
 
 const TopNav = (props: Props) => {
   return (
-    <header className="h-24 bg-lg-dark">
+    <header className="h-28 bg-lg-dark">
       <section className="container mx-auto h-full flex items-center justify-between">
         <div className="logo relative w-20 h-20">
           <Image src={LogicLogo} alt="" className="absolute w-full h-full" />
