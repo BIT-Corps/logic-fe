@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
         <h3 className=" font-bold text-8xl text-center">
           The love of God in christ church
         </h3>
-        <p className="w-7/12 text-justify">
+        <p className="w-7/12 text-center">
           The LOGIC Church stands as a beacon of The Love Of God In Christ Jesus
           here in Lagos Nigeria and to the world at large.
         </p>

@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "lg-black": "#222222",
+        "lg-black": "#272727",
         "lg-dark": "#1D1D1D",
         "lg-white": "#E3E3E3",
         "lg-gray": "#8C8C8C",

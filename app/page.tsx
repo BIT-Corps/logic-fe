@@ -173,7 +173,7 @@ export default function Home() {
                 )}
               </section>
             ))}
-            <section className="border-2 border-lg-gray p-8 space-y-8 rounded bg-lg-black flex flex-col justify-between">
+            <section className="p-8 space-y-8 rounded bg-lg-black flex flex-col justify-between">
               <div className="space-y-2">
                 <h2 className="text-5xl">BE A BLESSING TO OUR JOURNEY</h2>
                 <p>HILARIOUS GENEROSITY!</p>
