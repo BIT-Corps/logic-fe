@@ -3,7 +3,13 @@
 import { TextInput } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLongArrowAltRight,
+  FaYoutube,
+} from "react-icons/fa";
 import { AudienceImg, RaisedHandsImg, WorshipImg } from "./assets";
 import { Hero, RatedSermons, TopNav } from "./components";
 
@@ -104,6 +110,27 @@ export default function Home() {
           </section>
         </div>
       </section>
+
+      <footer className="h-[600px] bg-lg-dark text-lg-white">
+        <div className="lg-container h-full relative py-20">
+          <div></div>
+          <section className="flex items-center justify-between absolute bottom-0 w-full py-10 text-xl">
+            <h4>The LOGIC Church</h4>
+            <IconContext.Provider value={{ size: "28px" }}>
+              <div className="flex items-center justify-center gap-x-6">
+                {[
+                  { id: 0, icon: <FaFacebook /> },
+                  { id: 1, icon: <FaInstagram /> },
+                  { id: 2, icon: <FaYoutube /> },
+                ].map(({ icon, id }) => (
+                  <div key={id}>{icon}</div>
+                ))}
+              </div>
+            </IconContext.Provider>
+            <h4>All Rights Reserved</h4>
+          </section>
+        </div>
+      </footer>
     </main>
   );
 }
