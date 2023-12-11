@@ -50,6 +50,13 @@
     @apply container mx-auto;
   }
   .lg-section-white {
-    @apply p-24 text-lg-black;
+    @apply px-24 py-36 text-lg-black;
+  }
+  .lg-section-red {
+    @apply px-24 py-36 bg-lg-red;
+  }
+
+  .activities_table {
+    @apply grid grid-cols-4 justify-center items-center py-6;
   }
 }

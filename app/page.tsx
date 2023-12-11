@@ -76,7 +76,7 @@ export default function Home() {
             </p>
           </div>
 
-          <section className="grid grid-cols-3 gap-x-8 py-14">
+          <section className="grid grid-cols-3 gap-x-8 pt-14">
             {[
               {
                 id: 0,
@@ -106,7 +106,7 @@ export default function Home() {
                   className="relative"
                   onClick={() => setOpen(true)}
                 >
-                  <div className="img relative w-full h-72 rounded-lg cursor-pointer hover:scale-105 transition-all duration-200">
+                  <div className="img relative w-full h-72 rounded-lg cursor-pointer hover:scale-105 transition-all duration-500">
                     <Image
                       src={image}
                       alt=""
@@ -116,7 +116,7 @@ export default function Home() {
                       <GoPlay size={50} color="white" />
                     </div>
                   </div>
-                  <div className="uppercase my-3">
+                  <div className="uppercase mt-5">
                     <h6 className="text-4xl">{title}</h6>
                     <p className="text-lg-gray">{subTitle}</p>
                   </div>
@@ -130,6 +130,46 @@ export default function Home() {
                 />
               </>
             ))}
+          </section>
+        </div>
+      </section>
+      <section className="lg-section-red">
+        <div className="lg-container space-y-14">
+          <div className="uppercase">
+            <h4 className="text-6xl">Weekly Activities</h4>
+            <p>Equip yourself with our top rated sermons</p>
+          </div>
+
+          <section className="space-y-4">
+            <div className="activities_table bg-lg-red-dark rounded-lg">
+              <h4 className="col-span-2 pl-8 text-4xl">Sunday Sermon</h4>
+              <div className="text-center">
+                <h6 className="text-xl text-lg-gray-light">1st Service</h6>
+                <h5 className="text-4xl">8am - 10am</h5>
+              </div>
+              <div className="text-center">
+                <h6 className="text-xl text-lg-gray-light">2nd Service</h6>
+                <h5 className="text-4xl">10am - 12am</h5>
+              </div>
+            </div>
+            <div className="activities_table">
+              <h4 className="col-span-2 pl-8 text-4xl">Midweek Koinonia</h4>
+              <div className="text-center">
+                <h5 className="text-4xl">Wednesdays</h5>
+              </div>
+              <div className="text-center">
+                <h5 className="text-4xl">6pm - 9pm</h5>
+              </div>
+            </div>
+            <div className="activities_table">
+              <h4 className="col-span-2 pl-8 text-4xl">Daily Koinonia</h4>
+              <div className="text-center">
+                <h5 className="text-4xl">Every Morning</h5>
+              </div>
+              <div className="text-center">
+                <h5 className="text-4xl">6am - 7pm</h5>
+              </div>
+            </div>
           </section>
         </div>
       </section>
