@@ -1,49 +1,28 @@
 "use client";
 
-import { Button } from "@mantine/core";
+import { Button, TextInput } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
-import { FaYoutube } from "react-icons/fa";
+import { FaLongArrowAltRight, FaYoutube } from "react-icons/fa";
 import { GoPlay } from "react-icons/go";
 import ModalVideo from "react-modal-video";
-import { CrossPositionImg, LogicLogo, MKImg, TDIALImg } from "./assets";
-
-const links = [
-  { link: "/about", label: "Expressions" },
-  { link: "/pricing", label: "Resources" },
-  { link: "/learn", label: "Trainings" },
-  { link: "/community", label: "Events" },
-  { link: "/community", label: "About Us" },
-  { link: "/community", label: "Contact" },
-];
+import {
+  AudienceImg,
+  CrossPositionImg,
+  MKImg,
+  RaisedHandsImg,
+  TDIALImg,
+  WorshipImg,
+} from "./assets";
+import { TopNav } from "./components";
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <main>
-      <header className="h-24 bg-lg-dark">
-        <section className="container mx-auto h-full flex items-center justify-between">
-          <div className="logo relative w-20 h-20">
-            <Image src={LogicLogo} alt="" className="absolute w-full h-full" />
-          </div>
-          <nav className="flex items-center justify-between gap-x-8">
-            <ul className="flex items-center justify-start space-x-5">
-              {links.map((link) => (
-                <li
-                  key={link.link}
-                  className="text-sm cursor-pointer text-bebas"
-                >
-                  {link.label}
-                </li>
-              ))}
-            </ul>
-            <Button variant="filled" color="light-red">
-              Donate
-            </Button>
-          </nav>
-        </section>
-      </header>
+      <TopNav />
+
       <section className="flex items-center justify-center h-screen hero">
         <div className="flex items-center flex-col uppercase space-y-4">
           <h3 className=" font-bold text-8xl text-center">
@@ -67,6 +46,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="lg-section-white">
         <div className="lg-container">
           <div className="uppercase">
@@ -133,6 +113,7 @@ export default function Home() {
           </section>
         </div>
       </section>
+
       <section className="lg-section-red">
         <div className="lg-container space-y-14">
           <div className="uppercase">
@@ -169,6 +150,54 @@ export default function Home() {
               <div className="text-center">
                 <h5 className="text-4xl">6am - 7pm</h5>
               </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section className="lg-section-white">
+        <div className="lg-container space-y-14">
+          <div className="uppercase">
+            <h4 className="text-6xl">Expressions</h4>
+            <p className="text-lg-gray">
+              Equip yourself with our top rated sermons
+            </p>
+          </div>
+
+          <section className="grid grid-cols-2 gap-10">
+            {[
+              { id: 0, name: "Abuja", image: AudienceImg },
+              { id: 1, name: "Cotonou", image: AudienceImg },
+              { id: 2, name: "Lagos, Mainland", image: RaisedHandsImg },
+              { id: 3, name: "United Kingdom", image: WorshipImg },
+            ].map((expression) => (
+              <div
+                className="relative h-96 text-lg-white flex items-center justify-center cursor-pointer rounded-lg"
+                key={expression.id}
+              >
+                <Image
+                  src={expression.image}
+                  alt=""
+                  className="w-full h-full absolute object-cover brightness-50 hover:brightness-90 hover:blur-sm rounded-lg"
+                />
+                <h4 className="text-5xl absolute">{expression.name}</h4>
+              </div>
+            ))}
+          </section>
+
+          <section className="border subscribe_box text-white flex flex-col items-center justify-center text-center uppercase space-y-14">
+            <div>
+              <h4 className="text-7xl">
+                Let us show you <br /> the love of God
+              </h4>
+              <p className="text-sm">We are concerned about your growth!</p>
+            </div>
+            <div className="w-3/12">
+              <TextInput
+                placeholder="Text input"
+                variant="unstyled"
+                rightSection={<FaLongArrowAltRight color="red" />}
+              />
             </div>
           </section>
         </div>

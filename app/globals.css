@@ -43,6 +43,15 @@
       ),
       url("./assets/images/hero.jpeg"), lightgray 50%;
   }
+  .subscribe_box {
+    @apply bg-center bg-no-repeat bg-cover h-[800px] brightness-50 rounded-xl !important;
+    background: linear-gradient(
+        0deg,
+        rgba(64, 45, 34, 0.4) 0%,
+        rgba(64, 45, 34, 0.4) 100%
+      ),
+      url("./assets/images/kids.jpeg"), lightgray 60%;
+  }
 }
 
 @layer utilities {
