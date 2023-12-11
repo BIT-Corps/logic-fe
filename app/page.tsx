@@ -125,7 +125,7 @@ export default function Home() {
                 />
               </div>
               <div className="">
-                <p className="font-semibold text-lg-gray-light w-9/12 text-justify">
+                <p className="font-semibold text-lg-gray-light w-9/12 text-justify text-base">
                   The <span className="font-bold">LOGIC Church</span> stands as
                   a beacon of The Love Of God In Christ. We welcome all
                   individuals seeking God&apos;s love and our doors are open to

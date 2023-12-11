@@ -1,6 +1,7 @@
 import { LogicLogo } from "@/app/assets";
 import { Button } from "@mantine/core";
 import Image from "next/image";
+import Link from "next/link";
 
 const links = [
   { link: "/expressions", label: "Expressions" },
@@ -23,9 +24,11 @@ const TopNav = (props: Props) => {
         <nav className="flex items-center justify-between gap-x-8">
           <ul className="flex items-center justify-start space-x-5">
             {links.map((link) => (
-              <li key={link.link} className="text-sm cursor-pointer text-bebas">
-                {link.label}
-              </li>
+              <Link key={link.link} href={link.link}>
+                <li className="text-sm cursor-pointer text-bebas">
+                  {link.label}
+                </li>
+              </Link>
             ))}
           </ul>
           <Button variant="filled" color="light-red" size="sm">
