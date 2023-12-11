@@ -28,7 +28,7 @@ const TopNav = (props: Props) => {
               </li>
             ))}
           </ul>
-          <Button variant="filled" color="light-red">
+          <Button variant="filled" color="light-red" size="sm">
             Donate
           </Button>
         </nav>

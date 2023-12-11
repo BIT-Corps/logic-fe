@@ -1,3 +1,4 @@
+import Hero from "./Hero";
 import TopNav from "./TopNav";
 
-export { TopNav };
+export { Hero, TopNav };

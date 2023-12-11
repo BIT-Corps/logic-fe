@@ -1,9 +1,9 @@
 "use client";
 
-import { Button, TextInput } from "@mantine/core";
+import { TextInput } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
-import { FaLongArrowAltRight, FaYoutube } from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { GoPlay } from "react-icons/go";
 import ModalVideo from "react-modal-video";
 import {
@@ -14,7 +14,7 @@ import {
   TDIALImg,
   WorshipImg,
 } from "./assets";
-import { TopNav } from "./components";
+import { Hero, TopNav } from "./components";
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
@@ -22,30 +22,7 @@ export default function Home() {
   return (
     <main>
       <TopNav />
-
-      <section className="flex items-center justify-center h-screen hero">
-        <div className="flex items-center flex-col uppercase space-y-4">
-          <h3 className=" font-bold text-8xl text-center">
-            The love of God in christ church
-          </h3>
-          <p className="w-7/12 text-justify">
-            The LOGIC Church stands as a beacon of The Love Of God In Christ
-            Jesus here in Lagos Nigeria and to the world at large.
-          </p>
-          <div>
-            <Button
-              rightSection={<FaYoutube size={20} />}
-              variant="filled"
-              color="light-red.4"
-              size="lg"
-              radius="md"
-              className="uppercase mt-6 text-sm px-8"
-            >
-              See Live
-            </Button>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       <section className="lg-section-white">
         <div className="lg-container">
@@ -156,7 +133,7 @@ export default function Home() {
       </section>
 
       <section className="lg-section-white">
-        <div className="lg-container space-y-14">
+        <div className="lg-container space-y-20">
           <div className="uppercase">
             <h4 className="text-6xl">Expressions</h4>
             <p className="text-lg-gray">
