@@ -4,17 +4,8 @@ import { TextInput } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { GoPlay } from "react-icons/go";
-import ModalVideo from "react-modal-video";
-import {
-  AudienceImg,
-  CrossPositionImg,
-  MKImg,
-  RaisedHandsImg,
-  TDIALImg,
-  WorshipImg,
-} from "./assets";
-import { Hero, TopNav } from "./components";
+import { AudienceImg, RaisedHandsImg, WorshipImg } from "./assets";
+import { Hero, RatedSermons, TopNav } from "./components";
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
@@ -23,73 +14,7 @@ export default function Home() {
     <main>
       <TopNav />
       <Hero />
-
-      <section className="lg-section-white">
-        <div className="lg-container">
-          <div className="uppercase">
-            <h4 className="text-6xl">Top Rated Sermons</h4>
-            <p className="text-lg-gray">
-              Equip yourself with our top rated sermons
-            </p>
-          </div>
-
-          <section className="grid grid-cols-3 gap-x-8 pt-14">
-            {[
-              {
-                id: 0,
-                title: "Cross Position",
-                subTitle: "Dr Flourish Peters",
-                image: CrossPositionImg,
-                videoId: "1aTPZdtY1Pg",
-              },
-              {
-                id: 1,
-                title: "Morning Koinonia",
-                subTitle: "Dr Flourish Peters",
-                image: MKImg,
-                videoId: "1aTPZdtY1Pg",
-              },
-              {
-                id: 2,
-                title: "The Devil Is A Liar",
-                subTitle: "Dr Flourish Peters",
-                image: TDIALImg,
-                videoId: "1aTPZdtY1Pg",
-              },
-            ].map(({ id, title, subTitle, image, videoId }) => (
-              <>
-                <div
-                  key={id}
-                  className="relative"
-                  onClick={() => setOpen(true)}
-                >
-                  <div className="img relative w-full h-72 rounded-lg cursor-pointer hover:scale-105 transition-all duration-500">
-                    <Image
-                      src={image}
-                      alt=""
-                      className="w-full h-full absolute object-cover rounded-md brightness-50"
-                    />
-                    <div className="absolute top-[44%] left-[44%]">
-                      <GoPlay size={50} color="white" />
-                    </div>
-                  </div>
-                  <div className="uppercase mt-5">
-                    <h6 className="text-4xl">{title}</h6>
-                    <p className="text-lg-gray">{subTitle}</p>
-                  </div>
-                </div>
-                <ModalVideo
-                  channel="youtube"
-                  autoplay
-                  isOpen={isOpen}
-                  videoId={videoId}
-                  onClose={() => setOpen(false)}
-                />
-              </>
-            ))}
-          </section>
-        </div>
-      </section>
+      <RatedSermons />
 
       <section className="lg-section-red">
         <div className="lg-container space-y-14">
@@ -162,7 +87,7 @@ export default function Home() {
             ))}
           </section>
 
-          <section className="border subscribe_box text-white flex flex-col items-center justify-center text-center uppercase space-y-14">
+          <section className="subscribe_box text-white flex flex-col items-center justify-center text-center uppercase space-y-14">
             <div>
               <h4 className="text-7xl">
                 Let us show you <br /> the love of God

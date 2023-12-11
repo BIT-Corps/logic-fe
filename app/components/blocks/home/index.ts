@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import RatedSermons from "./RatedSermons";
 import TopNav from "./TopNav";
 
-export { Hero, TopNav };
+export { Hero, RatedSermons, TopNav };
