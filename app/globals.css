@@ -132,6 +132,9 @@
     @apply h-[480px] border bg-center bg-no-repeat bg-cover !important;
     background: url("./assets/images/vision.jpeg"), lightgray 50%;
   }
+  .footer{
+    
+  }
 }
 
 @layer utilities {

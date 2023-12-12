@@ -126,3 +126,31 @@ export const POP = [
       "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
   },
 ];
+
+export const footerLinks = [
+  {
+    id: 1,
+    title: "Quick Nav",
+    subLinks: [
+      { subId: 0, title: "Live Stream" },
+      { subId: 1, title: "Expressions" },
+      { subId: 2, title: "Resources" },
+      { subId: 3, title: "Training" },
+      { subId: 4, title: "FAQ" },
+      { subId: 5, title: "Privacy Policy" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Contact",
+    subLinks: [
+      { subId: 0, title: "info@thelogicchurch.org" },
+      { subId: 1, title: "(234) 80X-XXX-XXXX" },
+      {
+        subId: 2,
+        title:
+          "4, Oriwu Street, Beside Petrocam Fueling Station, Lekki phase 1, Lagos.",
+      },
+    ],
+  },
+];
