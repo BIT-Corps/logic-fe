@@ -1,3 +1,6 @@
+import { TextInput } from "@mantine/core";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 const weeklyActivities = [
   {
     id: 0,
@@ -81,7 +84,21 @@ const Mainland = (props: Props) => {
         </div>
       </section>
 
-      <section className="expression_box"></section>
+      <section className="expression_box flex flex-col items-center justify-center text-center uppercase space-y-16">
+        <div>
+          <h4 className="text-7xl">
+            Let us show you <br /> the love of God
+          </h4>
+          <p className="text-sm">We are concerned about your growth!</p>
+        </div>
+        <div className="w-3/12 uppercase">
+          <TextInput
+            placeholder="Subscribe to our newsletter"
+            variant="unstyled"
+            rightSection={<FaLongArrowAltRight color="white" />}
+          />
+        </div>
+      </section>
     </div>
   );
 };

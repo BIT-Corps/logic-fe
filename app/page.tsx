@@ -73,25 +73,25 @@ export default function Home() {
                 id: 0,
                 name: "Abuja",
                 image: AudienceImg,
-                link: "/expression/abuja",
+                link: "/expressions/abuja",
               },
               {
                 id: 1,
                 name: "Cotonou",
                 image: AudienceImg,
-                link: "/expression/cotonou",
+                link: "/expressions/cotonou",
               },
               {
                 id: 2,
                 name: "Lagos, Mainland",
                 image: RaisedHandsImg,
-                link: "/expression/mainland",
+                link: "/expressions/mainland",
               },
               {
                 id: 3,
                 name: "United Kingdom",
                 image: WorshipImg,
-                link: "/expression/uk",
+                link: "/expressions/uk",
               },
             ].map((expression) => (
               <Link

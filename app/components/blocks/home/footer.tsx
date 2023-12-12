@@ -30,7 +30,7 @@ const Footer = () => {
           {[
             {
               id: 1,
-              title: "Quick Links",
+              title: "Quick Nav",
               subLinks: [
                 { subId: 0, title: "Live Stream" },
                 { subId: 1, title: "Expressions" },
@@ -55,11 +55,11 @@ const Footer = () => {
             },
           ].map(({ id, subLinks, title }) => (
             <section key={id} className="space-y-8">
-              <h4 className="text-3xl">{title}</h4>
+              <h4 className="text-2xl">{title}</h4>
               {subLinks && (
                 <ul className="space-y-4">
                   {subLinks.map(({ subId, title }) => (
-                    <li key={subId}>
+                    <li key={subId} className="text-sm">
                       <Link href="/">{title}</Link>
                     </li>
                   ))}

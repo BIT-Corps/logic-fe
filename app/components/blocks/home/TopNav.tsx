@@ -12,9 +12,7 @@ const links = [
   { link: "/contact", label: "Contact" },
 ];
 
-type Props = {};
-
-const TopNav = (props: Props) => {
+const TopNav = () => {
   return (
     <header className="h-28 bg-lg-dark">
       <section className="container mx-auto h-full flex items-center justify-between">
