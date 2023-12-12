@@ -14,6 +14,7 @@ export default function Home() {
     <WebLayout>
       <Hero />
       <RatedSermons />
+
       <section className="lg-section-red">
         <div className="lg-container space-y-14">
           <div className="uppercase">
@@ -21,9 +22,11 @@ export default function Home() {
             <p>Equip yourself with our top rated sermons</p>
           </div>
 
-          <section className="space-y-4">
-            <div className="activities_table bg-lg-red-dark rounded-lg">
-              <h4 className="col-span-2 pl-8 text-4xl">Sunday Sermon</h4>
+          <section className="md:space-y-4">
+            <div className="activities_table bg-lg-red-dark rounded-lg space-y-4">
+              <h4 className="lg:col-span-2 md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
+                Sunday Sermon
+              </h4>
               <div className="text-center">
                 <h6 className="text-xl text-lg-gray-light">1st Service</h6>
                 <h5 className="text-4xl">8am - 10am</h5>
@@ -33,19 +36,23 @@ export default function Home() {
                 <h5 className="text-4xl">10am - 12am</h5>
               </div>
             </div>
-            <div className="activities_table">
-              <h4 className="col-span-2 pl-8 text-4xl">Midweek Koinonia</h4>
+            <div className="activities_table space-y-4">
+              <h4 className="lg:col-span-2 md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
+                Midweek Koinonia
+              </h4>
               <div className="text-center">
-                <h5 className="text-4xl">Wednesdays</h5>
+                <h5 className="text-xl md:text-4xl">Wednesdays</h5>
               </div>
               <div className="text-center">
                 <h5 className="text-4xl">6pm - 9pm</h5>
               </div>
             </div>
-            <div className="activities_table">
-              <h4 className="col-span-2 pl-8 text-4xl">Daily Koinonia</h4>
+            <div className="activities_table space-y-4">
+              <h4 className="lg:col-span-2 md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
+                Daily Koinonia
+              </h4>
               <div className="text-center">
-                <h5 className="text-4xl">Every Morning</h5>
+                <h5 className="text-xl md:text-4xl">Every Morning</h5>
               </div>
               <div className="text-center">
                 <h5 className="text-4xl">6am - 7pm</h5>
