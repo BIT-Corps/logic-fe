@@ -82,7 +82,7 @@ export default function Home() {
                   alt=""
                   className="w-full h-full absolute object-cover brightness-50 hover:brightness-90 hover:blur-sm rounded-lg"
                 />
-                <h4 className="text-5xl absolute">{name}</h4>
+                <h4 className="text-5xl absolute text-center">{name}</h4>
               </Link>
             ))}
           </section>
