@@ -1,13 +1,17 @@
 "use client";
 
-import { TopNav } from "../components";
+import { Footer, TopNav } from "../components";
 
-type Props = {};
+type Props = {
+  children: React.ReactNode;
+};
 
-const layout = (props: Props) => {
+const layout = ({ children }: Props) => {
   return (
     <>
       <TopNav />
+      {children}
+      <Footer />
     </>
   );
 };
