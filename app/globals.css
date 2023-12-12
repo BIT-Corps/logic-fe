@@ -45,7 +45,7 @@
     border-radius: 0px !important;
   }
   .mantine-Accordion-control {
-    @apply bg-lg-dark text-lg-gray-light !important;
+    @apply bg-lg-dark text-lg-white !important;
   }
   .mantine-Accordion-panel {
     @apply mt-4 !important;
