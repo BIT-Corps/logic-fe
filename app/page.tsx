@@ -24,7 +24,7 @@ export default function Home() {
 
           <section className="md:space-y-4">
             <div className="activities_table bg-lg-red-dark rounded-lg space-y-4">
-              <h4 className="lg:col-span-2 md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
+              <h4 className="md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center order-first">
                 Sunday Sermon
               </h4>
               <div className="text-center">
@@ -37,7 +37,7 @@ export default function Home() {
               </div>
             </div>
             <div className="activities_table space-y-4">
-              <h4 className="lg:col-span-2 md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
+              <h4 className="md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
                 Midweek Koinonia
               </h4>
               <div className="text-center">
@@ -48,7 +48,7 @@ export default function Home() {
               </div>
             </div>
             <div className="activities_table space-y-4">
-              <h4 className="lg:col-span-2 md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
+              <h4 className="md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
                 Daily Koinonia
               </h4>
               <div className="text-center">

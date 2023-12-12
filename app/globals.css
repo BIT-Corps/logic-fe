@@ -133,7 +133,7 @@
     background: url("./assets/images/vision.jpeg"), lightgray 50%;
   }
   .activities_table {
-    @apply grid md:grid-cols-3 lg:grid-cols-4 justify-center items-center py-10 md:py-6;
+    @apply grid md:grid-cols-3 lg:grid-cols-3 justify-center items-center py-10 md:py-6;
   }
 }
 
