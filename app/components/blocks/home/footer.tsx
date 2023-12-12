@@ -5,11 +5,9 @@ import Link from "next/link";
 import { IconContext } from "react-icons";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
-    <footer className="h-[600px] bg-lg-dark text-lg-white">
+    <footer className="h-[600px] lg-section-black">
       <div className="lg-container h-full relative py-24">
         <div className="grid grid-cols-4 gap-x-10">
           <section className="space-y-6">
@@ -21,7 +19,7 @@ const Footer = (props: Props) => {
               />
             </div>
             <div className="">
-              <p className="font-semibold text-lg-gray-light w-9/12 text-justify text-base">
+              <p className="font-semibold text-lg-gray-light w-9/12 text-justify">
                 The <span className="font-bold">LOGIC Church</span> stands as a
                 beacon of The Love Of God In Christ. We welcome all individuals
                 seeking God&apos;s love and our doors are open to every soul

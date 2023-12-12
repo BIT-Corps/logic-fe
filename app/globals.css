@@ -32,6 +32,12 @@
     font-family: "BebasNeue";
   }
 
+  p,
+  ul,
+  li {
+    font-size: 16px;
+  }
+
   .mantine-TextInput-input {
     @apply uppercase py-5 px-2 text-lg-gray-light !important;
     border-bottom: 2px solid #aeaeae !important;
@@ -50,7 +56,7 @@
       url("./assets/images/hero.jpeg"), lightgray 50%;
   }
   .expression_hero {
-    @apply bg-center bg-no-repeat bg-cover bg-slate-950 !important;
+    @apply bg-center bg-no-repeat bg-cover bg-slate-950 h-[500px] !important;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.36) 0%,
@@ -82,6 +88,9 @@
   }
   .lg-section-red {
     @apply px-24 py-36 bg-lg-red;
+  }
+  .lg-section-black {
+    @apply bg-lg-dark text-lg-white;
   }
 
   .activities_table {
