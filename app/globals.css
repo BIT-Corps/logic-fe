@@ -98,7 +98,7 @@
       url("./assets/images/hold-hands.jpeg"), lightgray 50%;
   }
   .subscribe_box {
-    @apply bg-center bg-no-repeat bg-cover h-[800px] rounded-2xl !important;
+    @apply bg-center bg-no-repeat bg-cover h-[600px] md:h-[800px] rounded-2xl !important;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.8) 0%,
@@ -139,7 +139,7 @@
     @apply container mx-auto;
   }
   .lg-section-white {
-    @apply px-10 md:px-24 py-20 md:py-36 text-lg-black;
+    @apply px-6 md:px-24 py-20 md:py-36 text-lg-black;
   }
   .lg-section-red {
     @apply px-24 py-36 bg-lg-red;
