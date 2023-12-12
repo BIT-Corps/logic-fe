@@ -35,7 +35,8 @@
   p,
   ul,
   li {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: light;
   }
 
   .mantine-TextInput-input {
@@ -89,6 +90,19 @@
         rgba(0, 0, 0, 0.8) 100%
       ),
       url("./assets/images/kids.jpeg"), lightgray 90%;
+  }
+  .training_hero {
+    @apply bg-center bg-no-repeat bg-cover h-[600px] !important;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.7) 20%,
+        rgba(0, 0, 0, 0.7) 60%,
+        rgba(0, 0, 0, 0.7) 40%,
+        rgba(0, 0, 0, 0.7) 80%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("./assets/images/climb-hill.jpeg"), lightgray 90%;
   }
 }
 
