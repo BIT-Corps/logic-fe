@@ -52,7 +52,7 @@ const About = (props: Props) => {
                 Pillars of Purpose:
                 <br /> Guiding Lights of Our Community
               </h4>
-              <p className="text-xs w-full lg:w-5/12 mx-auto font-semibold">
+              <p className="text-sm w-full lg:w-5/12 mx-auto font-semibold">
                 fundamental beliefs that shape our community and define our
                 shared journey. These principles are the heart of who we are and
                 the path we walk together.
@@ -61,11 +61,11 @@ const About = (props: Props) => {
             <div className="grid lg:grid-cols-2 gap-10">
               {POP.map(({ id, description, title }) => (
                 <div
-                  className="border rounded-lg py-20 px-16 space-y-4"
+                  className="border rounded-lg py-10 md:py-20 px-6 md:px-16 space-y-4"
                   key={id}
                 >
                   <h4 className="text-4xl text-lg-red">{title}</h4>
-                  <p className="text-lg w-full lg:w-10/12 text-justify">
+                  <p className="md:text-lg w-full lg:w-10/12 text-justify">
                     {description}
                   </p>
                 </div>
