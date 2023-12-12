@@ -92,4 +92,10 @@ export const LFC = [
     description:
       "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
   },
+  {
+    id: 4,
+    title: "More Questions?",
+    description:
+      "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
+  },
 ];
