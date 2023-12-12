@@ -9,29 +9,29 @@ const Trainings = () => {
   return (
     <>
       <section className="training_hero flex flex-col items-center justify-center text-center uppercase space-y-4">
-        <h2 className="text-8xl">
+        <h2 className="text-5xl md:text-8xl">
           Empowering Leaders, <br /> Nurturing Faith
         </h2>
-        <p className="text-lg">
-          Discover Your Path to Spiritual Growth and Leadership <br />{" "}
-          Excellence through Our Tailored Training Programs
+        <p className="text-sm md:text-lg lg:w-5/12">
+          Discover Your Path to Spiritual Growth and Leadership Excellence
+          through Our Tailored Training Programs
         </p>
       </section>
 
       <section className="lg-section-white">
-        <div className="lg-container space-y-32">
-          <div className="space-y-14">
-            <div className="flex flex-col items-center justify-center w-7/12 mx-auto text-center space-y-2">
+        <div className="lg-container space-y-36">
+          <div className="space-y-20">
+            <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
               <h2 className="text-6xl">Logic Foundation Class</h2>
-              <p className="text-lg">
+              <p className="text-sm lg:text-lg">
                 The <strong>L.O.G.I.C</strong> Foundation Class is a four (4)
                 week intensive development program aimed at driving in the
                 foundational doctrines of our faith, and unveiling who we are
                 and all that we have in Christ.
               </p>
             </div>
-            <section className="grid grid-cols-2 gap-x-24">
-              <div className="relative w-[780px] h-[515px]">
+            <section className="grid lg:grid-cols-2 gap-x-24">
+              <div className="relative hidden lg:block">
                 <Image
                   src={AssessmentImg}
                   alt=""
@@ -59,10 +59,10 @@ const Trainings = () => {
             </section>
           </div>
 
-          <div className="space-y-14">
-            <div className="flex flex-col items-center justify-center w-7/12 mx-auto text-center space-y-2">
+          <div className="space-y-20">
+            <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
               <h2 className="text-6xl">Logic Minister Training</h2>
-              <p className="text-lg">
+              <p className="text-sm lg:text-lg">
                 The Logic Minister Training is a specialized program designed to
                 equip and empower church ministers with the necessary skills and
                 knowledge to lead effectively. This training delves into the
@@ -70,7 +70,7 @@ const Trainings = () => {
                 communication, and spiritual leadership.
               </p>
             </div>
-            <section className="grid grid-cols-2 gap-x-20">
+            <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
               <div>
                 <Accordion
                   radius="md"
@@ -89,7 +89,7 @@ const Trainings = () => {
                   ))}
                 </Accordion>
               </div>
-              <div className="relative w-[780px] h-[515px]">
+              <div className="relative hidden lg:block">
                 <Image
                   src={WordImg}
                   alt=""
@@ -99,18 +99,18 @@ const Trainings = () => {
             </section>
           </div>
 
-          <div className="space-y-14">
-            <div className="flex flex-col items-center justify-center w-7/12 mx-auto text-center space-y-2">
+          <div className="space-y-20">
+            <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
               <h2 className="text-6xl">Logic Foundation Class</h2>
-              <p className="text-lg">
+              <p className="text-sm lg:text-lg">
                 The <strong>L.O.G.I.C</strong> Foundation Class is a four (4)
                 week intensive development program aimed at driving in the
                 foundational doctrines of our faith, and unveiling who we are
                 and all that we have in Christ.
               </p>
             </div>
-            <section className="grid grid-cols-2 gap-x-24">
-              <div className="relative w-[780px] h-[515px]">
+            <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-24">
+              <div className="relative hidden lg:block">
                 <Image
                   src={DiscipleImg}
                   alt=""
