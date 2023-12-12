@@ -20,7 +20,7 @@ const Trainings = () => {
 
       <section className="lg-section-white">
         <div className="lg-container space-y-36">
-          <div className="space-y-20">
+          <div className="space-y-16">
             <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
               <h2 className="text-6xl">Logic Foundation Class</h2>
               <p className="text-sm lg:text-lg">
@@ -59,7 +59,7 @@ const Trainings = () => {
             </section>
           </div>
 
-          <div className="space-y-20">
+          <div className="space-y-16">
             <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
               <h2 className="text-6xl">Logic Minister Training</h2>
               <p className="text-sm lg:text-lg">
@@ -99,7 +99,7 @@ const Trainings = () => {
             </section>
           </div>
 
-          <div className="space-y-20">
+          <div className="space-y-16">
             <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
               <h2 className="text-6xl">Logic Foundation Class</h2>
               <p className="text-sm lg:text-lg">
