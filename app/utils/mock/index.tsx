@@ -99,3 +99,30 @@ export const LFC = [
       "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
   },
 ];
+
+export const POP = [
+  {
+    id: 0,
+    title: "Love",
+    description:
+      "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
+  },
+  {
+    id: 1,
+    title: "Grace",
+    description:
+      "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
+  },
+  {
+    id: 2,
+    title: "Faith",
+    description:
+      "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
+  },
+  {
+    id: 3,
+    title: "Service",
+    description:
+      "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
+  },
+];

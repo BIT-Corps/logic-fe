@@ -1,3 +1,5 @@
+import { POP } from "../utils";
+
 type Props = {};
 
 const About = (props: Props) => {
@@ -14,7 +16,7 @@ const About = (props: Props) => {
         </div>
       </section>
       <section className="lg-section-white">
-        <div className="lg-container space-y-32">
+        <div className="lg-container space-y-36">
           <section className="grid grid-cols-2 gap-x-20">
             <div className="mission_img" />
             <div className="uppercase flex flex-col justify-center items-start gap-y-6">
@@ -44,49 +46,26 @@ const About = (props: Props) => {
 
           <section className="space-y-20">
             <div className="text-center uppercase space-y-1">
-              <h4 className="text-6xl">
+              <h4 className="text-4xl lg:text-6xl text-lg-red space-y-2">
                 Pillars of Purpose:
                 <br /> Guiding Lights of Our Community
               </h4>
-              <p className="w-5/12 mx-auto font-semibold">
+              <p className="text-xs lg:w-5/12 mx-auto font-semibold">
                 fundamental beliefs that shape our community and define our
                 shared journey. These principles are the heart of who we are and
                 the path we walk together.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-10">
-              {[
-                {
-                  id: 0,
-                  title: "Love",
-                  description:
-                    "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
-                },
-                {
-                  id: 1,
-                  title: "Grace",
-                  description:
-                    "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
-                },
-                {
-                  id: 2,
-                  title: "Faith",
-                  description:
-                    "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
-                },
-                {
-                  id: 3,
-                  title: "Service",
-                  description:
-                    "Love is at the heart of our community. We seek to emulate Christ's love in all our interactions, fostering a culture of acceptance and compassion.",
-                },
-              ].map(({ id, description, title }) => (
+            <div className="grid lg:grid-cols-2 gap-10">
+              {POP.map(({ id, description, title }) => (
                 <div
-                  className="border h-[300px] rounded-lg py-20 px-16 space-y-2.5 bg-lg-gray-light shadow-lg"
+                  className="border h-[300px] rounded-lg py-20 px-16 space-y-4"
                   key={id}
                 >
-                  <h4 className="text-4xl">{title}</h4>
-                  <p className="text-lg w-10/12 text-justify">{description}</p>
+                  <h4 className="text-4xl text-lg-red">{title}</h4>
+                  <p className="text-lg w-full lg:w-10/12 text-justify">
+                    {description}
+                  </p>
                 </div>
               ))}
             </div>
