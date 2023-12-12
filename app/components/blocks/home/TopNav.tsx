@@ -1,6 +1,5 @@
 import { LogicLogo } from "@/app/assets";
 import { Burger, Button } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -14,9 +13,14 @@ const links = [
   { link: "/contact", label: "Contact" },
 ];
 
-const TopNav = () => {
+type Props = {
+  opened: boolean;
+  toggle(): void;
+};
+
+const TopNav = ({ opened, toggle }: Props) => {
   const [menuIsOpened, setMenuIsOpened] = useState<boolean>(false);
-  const [opened, { toggle }] = useDisclosure();
+  // const [opened, { toggle }] = useDisclosure();
 
   return (
     <header className="h-28 bg-lg-dark">
@@ -32,11 +36,7 @@ const TopNav = () => {
             aria-label="Toggle Navigation"
           />
         </section>
-        {opened && (
-          <nav className="absolute top-28 w-full left-0 h-screen overflow-hidden bg-lg-dark z-30 p-8 border">
-            Hello
-          </nav>
-        )}
+       
         <nav className="md:flex items-center justify-between gap-x-8 hidden ">
           <ul className="flex items-center justify-start space-x-5">
             {links.map((link) => (

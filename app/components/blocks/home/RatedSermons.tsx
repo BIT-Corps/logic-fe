@@ -1,35 +1,10 @@
 "use client";
 
-import { CrossPositionImg, MKImg, TDIALImg } from "@/app/assets";
-import { TRatedSermons } from "@/app/types";
+import { sermons } from "@/app/utils";
 import Image from "next/image";
 import { useState } from "react";
 import { GoPlay } from "react-icons/go";
 import ModalVideo from "react-modal-video";
-
-const sermons: TRatedSermons[] = [
-  {
-    id: 0,
-    title: "Cross Position",
-    subTitle: "Dr Flourish Peters",
-    image: CrossPositionImg,
-    videoId: "1aTPZdtY1Pg",
-  },
-  {
-    id: 1,
-    title: "Morning Koinonia",
-    subTitle: "Dr Flourish Peters",
-    image: MKImg,
-    videoId: "1aTPZdtY1Pg",
-  },
-  {
-    id: 2,
-    title: "The Devil Is A Liar",
-    subTitle: "Dr Flourish Peters",
-    image: TDIALImg,
-    videoId: "1aTPZdtY1Pg",
-  },
-];
 
 const RatedSermons = () => {
   const [isOpen, setOpen] = useState(false);

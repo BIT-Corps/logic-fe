@@ -1,5 +1,12 @@
-import { AudienceImg, RaisedHandsImg, WorshipImg } from "@/app/assets";
-import { TExpressions } from "@/app/types";
+import {
+  AudienceImg,
+  CrossPositionImg,
+  MKImg,
+  RaisedHandsImg,
+  TDIALImg,
+  WorshipImg,
+} from "@/app/assets";
+import { TExpressions, TRatedSermons } from "@/app/types";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export const expressions: TExpressions[] = [
@@ -152,5 +159,29 @@ export const footerLinks = [
           "4, Oriwu Street, Beside Petrocam Fueling Station, Lekki phase 1, Lagos.",
       },
     ],
+  },
+];
+
+export const sermons: TRatedSermons[] = [
+  {
+    id: 0,
+    title: "Cross Position",
+    subTitle: "Dr Flourish Peters",
+    image: CrossPositionImg,
+    videoId: "1aTPZdtY1Pg",
+  },
+  {
+    id: 1,
+    title: "Morning Koinonia",
+    subTitle: "Dr Flourish Peters",
+    image: MKImg,
+    videoId: "1aTPZdtY1Pg",
+  },
+  {
+    id: 2,
+    title: "The Devil Is A Liar",
+    subTitle: "Dr Flourish Peters",
+    image: TDIALImg,
+    videoId: "1aTPZdtY1Pg",
   },
 ];
