@@ -4,17 +4,16 @@ import { TextInput } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Footer, Hero, RatedSermons, TopNav } from "./components";
+import { Hero, RatedSermons } from "./components";
+import { WebLayout } from "./layouts";
 import { TExpressions } from "./types";
 import { expressions } from "./utils";
 
 export default function Home() {
   return (
-    <main>
-      <TopNav />
+    <WebLayout>
       <Hero />
       <RatedSermons />
-
       <section className="lg-section-red">
         <div className="lg-container space-y-14">
           <div className="uppercase">
@@ -55,7 +54,6 @@ export default function Home() {
           </section>
         </div>
       </section>
-
       <section className="lg-section-white">
         <div className="lg-container space-y-20">
           <div className="uppercase">
@@ -99,8 +97,6 @@ export default function Home() {
           </section>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </WebLayout>
   );
 }

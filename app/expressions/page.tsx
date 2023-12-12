@@ -7,7 +7,7 @@ import { expressions } from "../utils";
 
 const Expressions = () => {
   return (
-    <div>
+    <>
       <section className="lg-section-white">
         <div className="lg-container space-y-20">
           <div className="uppercase">
@@ -51,7 +51,7 @@ const Expressions = () => {
           </section>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
