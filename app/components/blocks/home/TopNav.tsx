@@ -24,7 +24,7 @@ const TopNav = () => {
         <Link href="/" className="logo relative w-20 h-20">
           <Image src={LogicLogo} alt="" className="absolute w-full h-full" />
         </Link>
-        <section>
+        <section className="md:hidden block">
           <Burger
             opened={opened}
             color="white"
