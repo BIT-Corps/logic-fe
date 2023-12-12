@@ -3,15 +3,12 @@
 import { TextInput } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Footer, Hero, RatedSermons, TopNav } from "./components";
 import { TExpressions } from "./types";
 import { expressions } from "./utils";
 
 export default function Home() {
-  const [isOpen, setOpen] = useState(false);
-
   return (
     <main>
       <TopNav />
