@@ -22,11 +22,11 @@ const weeklyActivities = [
   },
 ];
 
-const Mainland = () => {
+const UnitedKingdom = () => {
   return (
     <div>
       <section className="expression_hero flex items-center justify-center">
-        <h2 className="text-8xl">Maryland, Mainland Lagos</h2>
+        <h2 className="text-8xl">Maryland, UnitedKingdom Lagos</h2>
       </section>
 
       <section className="lg-section-black">
@@ -101,4 +101,4 @@ const Mainland = () => {
   );
 };
 
-export default Mainland;
+export default UnitedKingdom;

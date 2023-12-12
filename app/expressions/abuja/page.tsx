@@ -26,19 +26,19 @@ const Mainland = () => {
   return (
     <div>
       <section className="expression_hero flex items-center justify-center">
-        <h2 className="text-8xl">Maryland, Mainland Lagos</h2>
+        <h2 className="text-8xl">Abuja</h2>
       </section>
 
       <section className="lg-section-black">
         <div className="lg-container py-24 space-y-10">
           <div className="uppercase">
             <h4 className="text-6xl">Weekly Activities</h4>
-            <p>All Activities on the mainland</p>
+            <p>All Activities at the Abuja expression</p>
           </div>
           <section className="space-y-5">
             <div className="grid grid-cols-4 border-2 items-center justify-center bg-lg-black rounded  py-4 border-gray-600/40">
               <h4 className="col-span-2 pl-8 text-3xl">
-                Service with Pst. Clarkson
+                Service with Pst. Cherish
               </h4>
               <div className="text-center">
                 <h5 className="text-3xl">9am - 12noon</h5>

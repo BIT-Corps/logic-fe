@@ -67,7 +67,7 @@ export default function Home() {
             </p>
           </div>
 
-          <section className="grid grid-cols-2 gap-10">
+          <section className="grid grid-cols-3 gap-10">
             {[
               {
                 id: 0,
@@ -77,18 +77,12 @@ export default function Home() {
               },
               {
                 id: 1,
-                name: "Cotonou",
-                image: AudienceImg,
-                link: "/expressions/cotonou",
-              },
-              {
-                id: 2,
                 name: "Lagos, Mainland",
                 image: RaisedHandsImg,
                 link: "/expressions/mainland",
               },
               {
-                id: 3,
+                id: 2,
                 name: "United Kingdom",
                 image: WorshipImg,
                 link: "/expressions/uk",
