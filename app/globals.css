@@ -49,6 +49,15 @@
       ),
       url("./assets/images/hero.jpeg"), lightgray 50%;
   }
+  .expression_hero {
+    @apply bg-center bg-no-repeat bg-cover bg-slate-950 !important;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.36) 0%,
+        rgba(0, 0, 0, 0.36) 100%
+      ),
+      url("./assets/images/hands.jpeg"), lightgray 50%;
+  }
   .subscribe_box {
     @apply bg-center bg-no-repeat bg-cover h-[800px] rounded-2xl !important;
     background: linear-gradient(

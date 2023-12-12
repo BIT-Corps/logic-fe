@@ -4,6 +4,7 @@ export { default as PFloTeachingImg } from "./PFloTeaching.jpeg";
 export { default as TDIALImg } from "./TDIAL.webp";
 export { default as AudienceImg } from "./audience.jpeg";
 export { default as RaisedHandsImg } from "./hands-raised.jpeg";
+export { default as HandsImg } from "./hands.jpeg";
 export { default as HeroImg } from "./hero.jpeg";
 export { default as KidsImg } from "./kids.jpeg";
 export { default as LogicLogo } from "./logic_logo.png";
