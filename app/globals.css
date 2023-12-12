@@ -53,6 +53,19 @@
 }
 
 @layer components {
+  .about_hero {
+    @apply bg-center bg-no-repeat bg-cover h-[700px] !important;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.6) 20%,
+        rgba(0, 0, 0, 0.6) 60%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.6) 80%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      url("./assets/images/audiencehands.jpeg"), lightgray 90%;
+  }
   .hero {
     @apply bg-center bg-no-repeat bg-cover bg-slate-950 !important;
     background: linear-gradient(
@@ -109,6 +122,15 @@
         rgba(0, 0, 0, 0.8) 100%
       ),
       url("./assets/images/climb-hill.jpeg"), lightgray 90%;
+  }
+
+  .mission_img {
+    @apply h-[480px] border bg-center bg-no-repeat bg-cover !important;
+    background: url("./assets/images/mission.jpeg"), lightgray 50%;
+  }
+  .vision_img {
+    @apply h-[480px] border bg-center bg-no-repeat bg-cover !important;
+    background: url("./assets/images/vision.jpeg"), lightgray 50%;
   }
 }
 

@@ -7,7 +7,7 @@ import { LFC, LMT } from "../utils";
 
 const Trainings = () => {
   return (
-    <div>
+    <>
       <section className="training_hero flex flex-col items-center justify-center text-center uppercase space-y-4">
         <h2 className="text-8xl">
           Empowering Leaders, <br /> Nurturing Faith
@@ -139,7 +139,7 @@ const Trainings = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
