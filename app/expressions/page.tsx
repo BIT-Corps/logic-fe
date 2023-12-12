@@ -17,7 +17,7 @@ const Expressions = () => {
             </p>
           </div>
 
-          <section className="grid grid-cols-3 gap-10">
+          <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {expressions.map(({ name, id, link, image }: TExpressions) => (
               <Link
                 href={link}
@@ -29,19 +29,19 @@ const Expressions = () => {
                   alt=""
                   className="w-full h-full absolute object-cover brightness-50 hover:brightness-90 hover:blur-sm rounded-lg"
                 />
-                <h4 className="text-5xl absolute">{name}</h4>
+                <h4 className="text-4xl md:text-5xl absolute">{name}</h4>
               </Link>
             ))}
           </section>
 
           <section className="subscribe_box text-lg-gray-light flex flex-col items-center justify-center text-center uppercase space-y-14">
             <div>
-              <h4 className="text-7xl">
+              <h4 className="text-4xl md:text-7xl">
                 Let us show you <br /> the love of God
               </h4>
               <p className="text-sm">We are concerned about your growth!</p>
             </div>
-            <div className="w-3/12 uppercase">
+            <div className="w-10/12 lg:w-3/12 uppercase">
               <TextInput
                 placeholder="Subscribe to our newsletter"
                 variant="unstyled"
