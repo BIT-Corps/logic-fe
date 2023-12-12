@@ -23,7 +23,7 @@ const TopNav = ({ opened, toggle }: Props) => {
   // const [opened, { toggle }] = useDisclosure();
 
   return (
-    <header className="h-28 bg-lg-dark">
+    <header className="h-28 bg-lg-dark fixed w-full z-50">
       <section className="container mx-auto h-full flex items-center justify-between px-4 xl:px-0">
         <Link href="/" className="logo relative w-20 h-20">
           <Image src={LogicLogo} alt="" className="absolute w-full h-full" />
@@ -36,7 +36,11 @@ const TopNav = ({ opened, toggle }: Props) => {
             aria-label="Toggle Navigation"
           />
         </section>
-       
+        {opened && (
+          <nav className="absolute top-28 w-full left-0 h-96 bg-lg-dark z-30 p-8">
+            Hello
+          </nav>
+        )}
         <nav className="md:flex items-center justify-between gap-x-8 hidden ">
           <ul className="flex items-center justify-start space-x-5">
             {links.map((link) => (
