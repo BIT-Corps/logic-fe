@@ -80,6 +80,8 @@ const Mainland = (props: Props) => {
           </a>
         </div>
       </section>
+
+      <section className="expression_box"></section>
     </div>
   );
 };

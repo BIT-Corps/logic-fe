@@ -64,6 +64,19 @@
       ),
       url("./assets/images/hands.jpeg"), lightgray 50%;
   }
+  .expression_box {
+    @apply bg-center bg-no-repeat bg-cover h-[800px] !important;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.85) 20%,
+        rgba(0, 0, 0, 0.8) 60%,
+        rgba(0, 0, 0, 0.8) 40%,
+        rgba(0, 0, 0, 0.85) 80%,
+        rgba(0, 0, 0, 0.85) 100%
+      ),
+      url("./assets/images/hold-hands.jpeg"), lightgray 50%;
+  }
   .subscribe_box {
     @apply bg-center bg-no-repeat bg-cover h-[800px] rounded-2xl !important;
     background: linear-gradient(

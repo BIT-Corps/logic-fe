@@ -6,6 +6,7 @@ export { default as AudienceImg } from "./audience.jpeg";
 export { default as RaisedHandsImg } from "./hands-raised.jpeg";
 export { default as HandsImg } from "./hands.jpeg";
 export { default as HeroImg } from "./hero.jpeg";
+export { default as HoldHandsImg } from "./hold-hands.jpeg";
 export { default as KidsImg } from "./kids.jpeg";
 export { default as LogicLogo } from "./logic_logo.png";
 export { default as Sermon1Img } from "./sermon1.jpeg";
