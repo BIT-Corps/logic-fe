@@ -7,9 +7,9 @@ import { IconContext } from "react-icons";
 
 const Footer = () => {
   return (
-    <footer className="h-[600px] lg-section-black">
-      <div className="lg-container h-full relative py-24">
-        <div className="grid grid-cols-4 gap-x-10">
+    <footer className="lg-section-black">
+      <div className="lg-container h-full relative py-24 flex flex-col justify-between md:gap-y-28">
+        <section className="grid md:grid-cols-4 gap-x-10">
           <section className="space-y-6">
             <div className="logo relative w-24 h-24">
               <Image
@@ -67,7 +67,7 @@ const Footer = () => {
               )}
             </section>
           ))}
-          <section className="p-8 space-y-8 rounded bg-lg-black flex flex-col justify-between">
+          <section className="hidden p-8 space-y-8 rounded bg-lg-black md:flex flex-col justify-between">
             <div className="space-y-2">
               <h2 className="text-5xl">BE A BLESSING TO OUR JOURNEY</h2>
               <p>HILARIOUS GENEROSITY!</p>
@@ -81,11 +81,12 @@ const Footer = () => {
               Donate
             </Button>
           </section>
-        </div>
-        <section className="flex items-center justify-between absolute bottom-0 w-full py-10 text-lg">
+        </section>
+
+        <section className="flex items-center justify-between w-full pt-10 text-lg">
           <h4>Copyright &copy; 2023 The LOGIC Church.</h4>
           <IconContext.Provider value={{ size: "28px" }}>
-            <div className="flex items-center justify-center gap-x-8">
+            <div className="hidden md:flex items-center justify-center gap-x-8">
               {SMLinks.map(({ icon, id }) => (
                 <div key={id}>{icon}</div>
               ))}
