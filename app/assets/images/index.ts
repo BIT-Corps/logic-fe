@@ -12,4 +12,5 @@ export { default as KidsImg } from "./kids.jpeg";
 export { default as LogicLogo } from "./logic_logo.png";
 export { default as Sermon1Img } from "./sermon1.jpeg";
 export { default as Sermon2Img } from "./sermon2.jpeg";
+export { default as WordImg } from "./word.jpeg";
 export { default as WorshipImg } from "./worship.jpeg";
