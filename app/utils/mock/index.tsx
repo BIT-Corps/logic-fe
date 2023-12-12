@@ -49,12 +49,12 @@ export const LMT = [
     description:
       "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
   },
-  // {
-  //   id: 3,
-  //   title: "Where and when does the training hold?",
-  //   description:
-  //     "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
-  // },
+  {
+    id: 3,
+    title: "How to register",
+    description:
+      "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
+  },
   {
     id: 4,
     title: "More Questions?",

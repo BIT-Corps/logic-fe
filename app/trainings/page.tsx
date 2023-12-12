@@ -31,7 +31,7 @@ const Trainings = () => {
           </div>
 
           <section className="grid grid-cols-2 gap-x-20">
-            <div className="relative w-[780px] h-[500px]">
+            <div className="relative w-[780px] h-[515px]">
               <Image
                 src={WordImg}
                 alt=""
