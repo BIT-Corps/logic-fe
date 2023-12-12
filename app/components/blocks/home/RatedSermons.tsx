@@ -38,13 +38,13 @@ const RatedSermons = () => {
     <section className="lg-section-white">
       <div className="lg-container">
         <div className="uppercase">
-          <h4 className="text-6xl">Top Rated Sermons</h4>
+          <h4 className="text-5xl md:text-6xl">Top Rated Sermons</h4>
           <p className="text-lg-gray">
             Equip yourself with our top rated sermons
           </p>
         </div>
 
-        <section className="grid grid-cols-3 gap-x-8 pt-14">
+        <section className="grid md:grid-cols-3 gap-y-10 md:gap-y-0 md:gap-x-8 pt-14">
           {sermons.map(({ id, title, subTitle, image, videoId }) => (
             <>
               <div key={id} className="relative" onClick={() => setOpen(true)}>

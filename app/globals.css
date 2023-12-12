@@ -139,7 +139,7 @@
     @apply container mx-auto;
   }
   .lg-section-white {
-    @apply px-24 py-36 text-lg-black;
+    @apply px-10 md:px-24 py-20 md:py-36 text-lg-black;
   }
   .lg-section-red {
     @apply px-24 py-36 bg-lg-red;
