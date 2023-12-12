@@ -7,3 +7,10 @@ export type TRatedSermons = {
   image: StaticImageData;
   videoId: string;
 };
+
+export type TExpressions = {
+  id: number;
+  name: string;
+  image: StaticImageData;
+  link: string;
+};

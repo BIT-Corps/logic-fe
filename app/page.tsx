@@ -5,8 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { AudienceImg, RaisedHandsImg, WorshipImg } from "./assets";
 import { Footer, Hero, RatedSermons, TopNav } from "./components";
+import { TExpressions } from "./types";
+import { expressions } from "./utils";
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
@@ -68,37 +69,18 @@ export default function Home() {
           </div>
 
           <section className="grid grid-cols-3 gap-10">
-            {[
-              {
-                id: 0,
-                name: "Abuja",
-                image: AudienceImg,
-                link: "/expressions/abuja",
-              },
-              {
-                id: 1,
-                name: "Lagos, Mainland",
-                image: RaisedHandsImg,
-                link: "/expressions/mainland",
-              },
-              {
-                id: 2,
-                name: "United Kingdom",
-                image: WorshipImg,
-                link: "/expressions/uk",
-              },
-            ].map((expression) => (
+            {expressions.map(({ name, id, link, image }: TExpressions) => (
               <Link
-                href={expression.link}
+                href={link}
                 className="relative h-96 text-lg-white flex items-center justify-center cursor-pointer rounded-lg"
-                key={expression.id}
+                key={id}
               >
                 <Image
-                  src={expression.image}
+                  src={image}
                   alt=""
                   className="w-full h-full absolute object-cover brightness-50 hover:brightness-90 hover:blur-sm rounded-lg"
                 />
-                <h4 className="text-5xl absolute">{expression.name}</h4>
+                <h4 className="text-5xl absolute">{name}</h4>
               </Link>
             ))}
           </section>
