@@ -44,6 +44,12 @@
     border-bottom: 2px solid #aeaeae !important;
     border-radius: 0px !important;
   }
+  .mantine-Accordion-control {
+    @apply bg-lg-dark text-lg-gray-light !important;
+  }
+  .mantine-Accordion-panel {
+    @apply mt-4 !important;
+  }
 }
 
 @layer components {

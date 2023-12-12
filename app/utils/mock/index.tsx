@@ -29,3 +29,36 @@ export const SMLinks = [
   { id: 2, icon: <FaYoutube /> },
   { id: 3, icon: <FaTwitter /> },
 ];
+
+export const LMT = [
+  {
+    id: 0,
+    title: "What is LMT?",
+    description:
+      "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
+  },
+  {
+    id: 1,
+    title: "Why should you be a part of this?",
+    description:
+      "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
+  },
+  {
+    id: 2,
+    title: "Who should register?",
+    description:
+      "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
+  },
+  // {
+  //   id: 3,
+  //   title: "Where and when does the training hold?",
+  //   description:
+  //     "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
+  // },
+  {
+    id: 4,
+    title: "More Questions?",
+    description:
+      "Enhanced pastoral skills Improved leadership capabilities Deeper understanding of theological concepts Networking opportunities with fellow ministers",
+  },
+];

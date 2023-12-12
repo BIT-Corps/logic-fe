@@ -1,5 +1,9 @@
+"use client";
+
+import { Accordion } from "@mantine/core";
 import Image from "next/image";
 import { WordImg } from "../assets";
+import { LMT } from "../utils";
 
 const Trainings = () => {
   return (
@@ -26,13 +30,31 @@ const Trainings = () => {
             </p>
           </div>
 
-          <section className="border grid grid-cols-2">
-            <div className="relative w-[780px] h-[680px]">
+          <section className="grid grid-cols-2 gap-x-20">
+            <div className="relative w-[780px] h-[500px]">
               <Image
                 src={WordImg}
                 alt=""
                 className="absolute h-full w-full object-cover"
               />
+            </div>
+            <div>
+              <Accordion
+                radius="md"
+                variant="separated"
+                defaultValue="What is LMT?"
+              >
+                {LMT.map(({ id, title, description }) => (
+                  <Accordion.Item value={title} key={id}>
+                    <Accordion.Control>
+                      <h4 className="text-4xl">{title}</h4>
+                    </Accordion.Control>
+                    <Accordion.Panel>
+                      <p className="w-11/12 text-lg">{description}</p>
+                    </Accordion.Panel>
+                  </Accordion.Item>
+                ))}
+              </Accordion>
             </div>
           </section>
         </div>
