@@ -1,5 +1,6 @@
 import { AudienceImg, RaisedHandsImg, WorshipImg } from "@/app/assets";
 import { TExpressions } from "@/app/types";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export const expressions: TExpressions[] = [
   {
@@ -20,4 +21,11 @@ export const expressions: TExpressions[] = [
     image: WorshipImg,
     link: "/expressions/uk",
   },
+];
+
+export const SMLinks = [
+  { id: 0, icon: <FaFacebook /> },
+  { id: 1, icon: <FaInstagram /> },
+  { id: 2, icon: <FaYoutube /> },
+  { id: 3, icon: <FaTwitter /> },
 ];

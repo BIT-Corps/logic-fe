@@ -1,3 +1,5 @@
+"use client";
+
 import { CrossPositionImg, MKImg, TDIALImg } from "@/app/assets";
 import { TRatedSermons } from "@/app/types";
 import Image from "next/image";

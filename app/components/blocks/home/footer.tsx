@@ -1,9 +1,9 @@
 import { LogicLogo } from "@/app/assets";
+import { SMLinks } from "@/app/utils";
 import { Button } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import { IconContext } from "react-icons";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -86,12 +86,7 @@ const Footer = () => {
           <h4>Copyright &copy; 2023 The LOGIC Church.</h4>
           <IconContext.Provider value={{ size: "28px" }}>
             <div className="flex items-center justify-center gap-x-8">
-              {[
-                { id: 0, icon: <FaFacebook /> },
-                { id: 1, icon: <FaInstagram /> },
-                { id: 2, icon: <FaYoutube /> },
-                { id: 3, icon: <FaTwitter /> },
-              ].map(({ icon, id }) => (
+              {SMLinks.map(({ icon, id }) => (
                 <div key={id}>{icon}</div>
               ))}
             </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Footer, TopNav } from "../components";
 
 type Props = {
