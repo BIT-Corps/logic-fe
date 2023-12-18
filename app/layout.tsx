@@ -24,6 +24,7 @@ export default function RootLayout({
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <link rel="preload" href="./assets/images/kids.jpeg" as="image" />
       </head>
       <body>
         <MantineProvider theme={theme}>{children}</MantineProvider>

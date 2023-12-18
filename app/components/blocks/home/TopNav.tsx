@@ -48,15 +48,17 @@ const TopNav = ({ opened, toggle }: Props) => {
           </nav>
         )}
         <nav className="md:flex items-center justify-between gap-x-8 hidden ">
-          <ul className="flex items-center justify-start space-x-5">
+          <div className="flex items-center justify-start space-x-5">
             {links.map((link) => (
-              <Link key={link.link} href={link.link}>
-                <li className="text-sm cursor-pointer text-bebas">
-                  {link.label}
-                </li>
+              <Link
+                key={link.link}
+                href={link.link}
+                className="text-sm cursor-pointer text-bebas"
+              >
+                {link.label}
               </Link>
             ))}
-          </ul>
+          </div>
           <Button variant="filled" color="light-red" size="sm">
             Donate
           </Button>

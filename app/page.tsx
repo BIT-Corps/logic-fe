@@ -20,7 +20,9 @@ export default function Home() {
         <div className="lg-container space-y-14">
           <div className="uppercase">
             <h4 className="text-6xl">Weekly Activities</h4>
-            <p>Equip yourself with our top rated sermons</p>
+            <p className="text-neutral-200 font-semibold">
+              Equip yourself with our top rated sermons
+            </p>
           </div>
 
           <section className="md:space-y-4">
