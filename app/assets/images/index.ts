@@ -6,6 +6,7 @@ export { default as AssessmentImg } from "./assessment.jpeg";
 export { default as AudienceImg } from "./audience.jpeg";
 export { default as AudienceHandsImg } from "./audiencehands.jpeg";
 export { default as ClimbHill } from "./climb-hill.jpeg";
+export { default as ContactImg } from "./contact.jpeg";
 export { default as DiscipleImg } from "./disciple.jpeg";
 export { default as RaisedHandsImg } from "./hands-raised.jpeg";
 export { default as HandsImg } from "./hands.jpeg";

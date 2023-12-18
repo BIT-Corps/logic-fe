@@ -10,7 +10,7 @@ const WebLayout = ({ children }: Props) => {
   return (
     <>
       <TopNav opened={opened} toggle={toggle} />
-      <main className="py-14">{children}</main>
+      <main className="pt-14">{children}</main>
       <Footer />
     </>
   );
