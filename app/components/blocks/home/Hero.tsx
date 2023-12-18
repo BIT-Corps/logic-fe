@@ -1,12 +1,20 @@
+import { HeroImg } from "@/app/assets";
 import { Button } from "@mantine/core";
+import Image from "next/image";
 import { FaYoutube } from "react-icons/fa";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="flex items-center justify-center h-screen hero shadow-lg">
-      <div className="flex items-center flex-col uppercase space-y-4">
+    <section className="flex items-center justify-center shadow-lg relative">
+      <Image
+        src={HeroImg}
+        alt="hero_img"
+        className="h-screen object-cover w-full brightness-50"
+        sizes="100vh"
+      />
+      <div className="flex items-center flex-col uppercase space-y-4 absolute">
         <h3 className="font-bold text-6xl md:text-8xl text-center">
           The love of God in christ church
         </h3>

@@ -4,6 +4,7 @@ import { TextInput } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { KidsImg } from "./assets";
 import { Hero, RatedSermons } from "./components";
 import { WebLayout } from "./layouts";
 import { TExpressions } from "./types";
@@ -87,19 +88,26 @@ export default function Home() {
             ))}
           </section>
 
-          <section className="subscribe_box text-lg-gray-light flex flex-col items-center justify-center text-center uppercase space-y-14">
-            <div className="space-y-2">
-              <h4 className="text-5xl md:text-7xl">
-                Let us show you <br /> the love of God
-              </h4>
-              <p className="text-sm">We are concerned about your growth!</p>
-            </div>
-            <div className="w-10/12 lg:w-3/12 uppercase">
-              <TextInput
-                placeholder="Subscribe to our newsletter"
-                variant="unstyled"
-                rightSection={<FaLongArrowAltRight color="white" />}
-              />
+          <section className="text-lg-gray-light flex flex-col items-center justify-center text-center uppercase space-y-14 relative">
+            <Image
+              src={KidsImg}
+              alt="kids"
+              className="w-full h-[800px] object-cover rounded-2xl brightness-50"
+            />
+            <div className="absolute w-full space-y-10">
+              <div className="space-y-2">
+                <h4 className="text-5xl md:text-7xl">
+                  Let us show you <br /> the love of God
+                </h4>
+                <p className="text-sm">We are concerned about your growth!</p>
+              </div>
+              <div className="w-10/12 lg:w-3/12 uppercase mx-auto">
+                <TextInput
+                  placeholder="Subscribe to our newsletter"
+                  variant="unstyled"
+                  rightSection={<FaLongArrowAltRight color="white" />}
+                />
+              </div>
             </div>
           </section>
         </div>
