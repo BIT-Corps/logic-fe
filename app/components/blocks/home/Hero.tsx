@@ -18,7 +18,7 @@ const Hero = (props: Props) => {
           <Button
             rightSection={<FaYoutube size={20} />}
             variant="filled"
-            color="light-red.4"
+            color="light-red"
             size="lg"
             radius="md"
             className="uppercase mt-6 text-base px-6"

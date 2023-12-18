@@ -29,7 +29,9 @@ const TopNav = ({ opened, toggle }: Props) => {
           <Image
             src={LogicLogo}
             alt="LOGIC_LOGO"
-            className="absolute w-full h-full"
+            className="absolute w-20 h-20"
+            width={80}
+            height={80}
           />
         </Link>
         <section className="md:hidden block">

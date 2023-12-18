@@ -15,7 +15,9 @@ const Footer = () => {
               <Image
                 src={LogicLogo}
                 alt="LOGIC_logo"
-                className="absolute w-full h-full"
+                className="absolute w-24 h-24"
+                width={96}
+                height={96}
               />
             </div>
             <div className="">
