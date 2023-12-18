@@ -21,8 +21,8 @@ const RatedSermons = () => {
 
         <section className="grid lg:grid-cols-3 gap-y-10 lg:gap-y-0 md:gap-x-8 pt-14">
           {sermons.map(({ id, title, subTitle, image, videoId }) => (
-            <>
-              <div key={id} className="relative" onClick={() => setOpen(true)}>
+            <div key={id}>
+              <div className="relative" onClick={() => setOpen(true)}>
                 <div className="img relative w-full h-72 rounded-lg cursor-pointer hover:scale-105 transition-all duration-500">
                   <Image
                     src={image}
@@ -34,7 +34,7 @@ const RatedSermons = () => {
                   </div>
                 </div>
                 <div className="uppercase mt-5">
-                  <h6 className="text-4xl">{title}</h6>
+                  <h4 className="text-4xl">{title}</h4>
                   <p className="text-lg-gray">{subTitle}</p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const RatedSermons = () => {
                 videoId={videoId}
                 onClose={() => setOpen(false)}
               />
-            </>
+            </div>
           ))}
         </section>
       </div>

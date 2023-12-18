@@ -28,11 +28,11 @@ export default function Home() {
                 Sunday Sermon
               </h4>
               <div className="text-center">
-                <h6 className="text-xl text-lg-gray-light">1st Service</h6>
+                <h4 className="text-xl text-lg-gray-light">1st Service</h4>
                 <h5 className="text-4xl">8am - 10am</h5>
               </div>
               <div className="text-center">
-                <h6 className="text-xl text-lg-gray-light">2nd Service</h6>
+                <h4 className="text-xl text-lg-gray-light">2nd Service</h4>
                 <h5 className="text-4xl">10am - 12am</h5>
               </div>
             </div>

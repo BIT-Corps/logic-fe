@@ -26,7 +26,11 @@ const TopNav = ({ opened, toggle }: Props) => {
     <header className="h-28 bg-lg-dark fixed w-full z-50">
       <section className="container mx-auto h-full flex items-center justify-between px-4 xl:px-0">
         <Link href="/" className="logo relative w-20 h-20">
-          <Image src={LogicLogo} alt="" className="absolute w-full h-full" />
+          <Image
+            src={LogicLogo}
+            alt="LOGIC_LOGO"
+            className="absolute w-full h-full"
+          />
         </Link>
         <section className="md:hidden block">
           <Burger
