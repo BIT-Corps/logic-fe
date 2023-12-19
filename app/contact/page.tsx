@@ -11,6 +11,22 @@ const Contact = (props: Props) => {
           grow in faith, strength, knowledge and wisdom of god
         </p>
       </section>
+
+      <section className="lg-section-white">
+        <div className="lg-container">
+          <ul className="locations mx-auto flex items-center justify-center gap-x-14">
+            {[
+              { id: 0, title: "HQ, Lagos Island" },
+              { id: 1, title: "Abuja" },
+              { id: 2, title: "Cotonou" },
+              { id: 3, title: "Mainland - Lagos" },
+              { id: 4, title: "London, UK" },
+            ].map(({ id, title }) => (
+              <li key={id}>{title}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </>
   );
 };
