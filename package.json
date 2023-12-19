@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.0.0",
     "@mantine/carousel": "^7.3.0",
     "@mantine/core": "^7.3.0",
     "@mantine/form": "^7.3.0",

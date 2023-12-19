@@ -6,6 +6,7 @@ import "./globals.css";
 import { theme } from "./lib";
 
 export const metadata: Metadata = {
+  manifest: "/manifest.json",
   title: "LOGIC",
   description:
     "The LOGIC Church stands as a beacon of The Love Of God In Christ Jesus here in Lagos Nigeria and to the world at large.",
