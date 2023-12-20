@@ -1,6 +1,6 @@
-type Props = {};
+"use client";
 
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <>
       <section className="contact_hero flex flex-col items-center justify-center text-center uppercase font-semibold">
@@ -27,7 +27,7 @@ const Contact = (props: Props) => {
               </li>
             ))}
           </ul>
-          <section className="border"></section>
+          <section className="border">Map</section>
         </div>
       </section>
     </>
