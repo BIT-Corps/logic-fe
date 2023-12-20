@@ -13,7 +13,7 @@ const Contact = (props: Props) => {
       </section>
 
       <section className="lg-section-white">
-        <div className="lg-container">
+        <div className="lg-container space-y-8">
           <ul className="locations mx-auto flex items-center justify-center gap-x-14">
             {[
               { id: 0, title: "HQ, Lagos Island" },
@@ -22,9 +22,12 @@ const Contact = (props: Props) => {
               { id: 3, title: "Mainland - Lagos" },
               { id: 4, title: "London, UK" },
             ].map(({ id, title }) => (
-              <li key={id}>{title}</li>
+              <li key={id} className="font-semibold cursor-pointer">
+                {title}
+              </li>
             ))}
           </ul>
+          <section className="border"></section>
         </div>
       </section>
     </>
