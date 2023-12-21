@@ -36,11 +36,11 @@ const Contact = () => {
               ))}
             </ul>
 
-            <section className="flex flex-col justify-center gap-y-10">
+            <section className="flex flex-col justify-center gap-y-14">
               <Image src="/map.png" alt="map" width={1881} height={852} />
-              <div className="grid grid-cols-3 cleargap-x-10">
+              <div className="grid grid-cols-3 justify-end gap-x-10">
                 <div className="space-y-2 col-span-2">
-                  <h4 className="md:text-lg lg:text-2xl">
+                  <h4 className="md:text-lg lg:text-2xl text-lg-gray">
                     Visit the Logic Center
                   </h4>
                   <h5 className="text-sm md:text-xl lg:text-4xl">
@@ -48,9 +48,11 @@ const Contact = () => {
                     Lekki phase 1 Lagos
                   </h5>
                 </div>
-                <div className="space-y-2">
-                  <h4 className="md:text-lg lg:text-2xl">Contact</h4>
-                  <div className="text-sm md:text-xl lg:text-4xl">
+                <div className="space-y-2 ml-auto">
+                  <h4 className="md:text-lg lg:text-2xl text-lg-gray">
+                    Contact
+                  </h4>
+                  <div className="text-sm md:text-xl lg:text-3xl">
                     <h6>info@thelogicchurch.org</h6>
                     <h6>+(234) 809 668 2229</h6>
                   </div>
@@ -64,7 +66,7 @@ const Contact = () => {
               <h2 className="text-5xl">Frequently asked questions</h2>
               <p className="">special curated series for you</p>
             </div>
-            <div className="w-7/12 mx-auto">
+            <div className="w-7/12 lg:w-10/12 mx-auto">
               <Accordion defaultValue="How can I get involved in the church community?">
                 {FAQ.map(({ id, title, description }) => (
                   <Accordion.Item value={title} key={id}>

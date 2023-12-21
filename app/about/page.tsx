@@ -1,8 +1,6 @@
 import { POP } from "../utils";
 
-type Props = {};
-
-const About = (props: Props) => {
+const About = () => {
   return (
     <>
       <section className="about_hero flex flex-col items-center justify-center text-center uppercase space-y-4">

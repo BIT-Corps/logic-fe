@@ -68,6 +68,12 @@ export const FAQ = [
     description:
       "Share information about various ministries, groups, or volunteer opportunities within the church. Include details on how newcomers can join and participate.",
   },
+  {
+    id: 5,
+    title: "How can I request pastoral care or counseling?",
+    description:
+      "Share information about various ministries, groups, or volunteer opportunities within the church. Include details on how newcomers can join and participate.",
+  },
 ];
 
 export const LMT = [
