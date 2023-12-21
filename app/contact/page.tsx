@@ -29,8 +29,24 @@ const Contact = () => {
               </li>
             ))}
           </ul>
-          <section className="border flex items-center justify-center">
+          <section className="flex flex-col justify-center gap-y-10">
             <Image src="/map.png" alt="map" width={1881} height={852} />
+            <div className="grid grid-cols-3 gap-x-10">
+              <div className="space-y-2 col-span-2">
+                <h4 className="text-2xl">Visit the Logic Center</h4>
+                <h5 className="text-4xl">
+                  4, Oriwu Street, Beside Petrocam <br /> Fueling Station, Lekki
+                  phase 1 Lagos
+                </h5>
+              </div>
+              <div className="space-y-2">
+                <h4 className="text-2xl">Contact</h4>
+                <h5>
+                  <h6 className="text-4xl">info@thelogicchurch.org</h6>
+                  <h6 className="text-4xl">+(234) 809 668 2229</h6>
+                </h5>
+              </div>
+            </div>
           </section>
         </div>
       </section>
