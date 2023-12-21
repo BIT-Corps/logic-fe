@@ -2,9 +2,20 @@
 
 import { Accordion } from "@mantine/core";
 import Image from "next/image";
+import { useState } from "react";
 import { FAQ } from "../utils";
 
+const locations = [
+  { id: 0, title: "HQ, Lekki Phase 1", slug: "HQ" },
+  { id: 1, title: "Abuja", slug: "Abj" },
+  { id: 2, title: "Cotonou", slug: "CT" },
+  { id: 3, title: "Mainland, Lagos", slug: "LGM" },
+  { id: 4, title: "London, UK", slug: "UK" },
+];
+
 const Contact = () => {
+  const [currentLocation, setCurrentLocation] = useState<string>("HQ");
+
   return (
     <>
       <section className="contact_hero flex flex-col items-center justify-center text-center uppercase font-semibold">
@@ -18,18 +29,16 @@ const Contact = () => {
 
       <section className="lg-section-white">
         <div className="lg-container space-y-32">
-          <div className="space-y-10">
+          <div className="space-y-14">
             <ul className="locations mx-auto flex flex-col md:flex-row items-center justify-center gap-y-5 md:gap-y-0 gap-x-10 lg:gap-x-14">
-              {[
-                { id: 0, title: "HQ, Lekki Phase 1" },
-                { id: 1, title: "Abuja" },
-                { id: 2, title: "Cotonou" },
-                { id: 3, title: "Mainland, Lagos" },
-                { id: 4, title: "London, UK" },
-              ].map(({ id, title }) => (
+              {locations.map(({ id, title, slug }) => (
                 <li
                   key={id}
-                  className="font-semibold cursor-pointer lg:text-lg"
+                  className={`${
+                    currentLocation === slug &&
+                    "border-b-4 border-black/80 transition duration-300"
+                  } font-semibold cursor-pointer lg:text-lg px-2`}
+                  onClick={() => setCurrentLocation(slug)}
                 >
                   {title}
                 </li>
