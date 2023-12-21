@@ -1,18 +1,8 @@
 "use client";
 
-import { GoogleMap, useLoadScript } from "@react-google-maps/api";
-import { useMemo } from "react";
+import Image from "next/image";
 
-type Props = {};
-
-const Contact = (props: Props) => {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDOeqeickBXtSX_Jc3ElbxSbaP6jRCTXFE",
-  });
-  const center = useMemo(() => ({ lat: 18.52043, lng: 73.856743 }), []);
-
-  //js?key=AIzaSyDOeqeickBXtSX_Jc3ElbxSbaP6jRCTXFE&libraries=places
-
+const Contact = () => {
   return (
     <>
       <section className="contact_hero flex flex-col items-center justify-center text-center uppercase font-semibold">
@@ -39,16 +29,8 @@ const Contact = (props: Props) => {
               </li>
             ))}
           </ul>
-          <section className="border">
-            {!isLoaded ? (
-              <h1>Loading...</h1>
-            ) : (
-              <GoogleMap
-                mapContainerClassName="map-container"
-                center={center}
-                zoom={10}
-              />
-            )}
+          <section className="border flex items-center justify-center">
+            <Image src="/map.png" alt="map" width={1881} height={852} />
           </section>
         </div>
       </section>
