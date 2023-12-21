@@ -3,6 +3,7 @@ import { Burger, Button } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Slide from "react-reveal/Slide";
 
 const links = [
   { link: "/expressions", label: "Expressions" },
@@ -23,15 +24,15 @@ const TopNav = ({ opened, toggle }: Props) => {
   // const [opened, { toggle }] = useDisclosure();
 
   return (
-    <header className="h-28 bg-lg-dark fixed w-full z-50">
+    <header className="h-20 bg-lg-dark fixed w-full z-50">
       <section className="container mx-auto h-full flex items-center justify-between px-4 xl:px-0">
-        <Link href="/" className="logo relative w-20 h-20">
+        <Link href="/" className="logo relative w-16 h-16">
           <Image
             src={LogicLogo}
             alt="LOGIC_LOGO"
-            className="absolute w-20 h-20"
-            width={80}
-            height={80}
+            className="absolute w-16 h-16"
+            width={64}
+            height={64}
           />
         </Link>
         <section className="md:hidden block">
@@ -43,9 +44,11 @@ const TopNav = ({ opened, toggle }: Props) => {
           />
         </section>
         {opened && (
-          <nav className="absolute top-28 w-full left-0 h-96 bg-lg-dark z-30 p-8">
-            Hello
-          </nav>
+          <Slide left>
+            <nav className="absolute top-20 w-full left-0 h-96 bg-lg-dark z-30 p-8">
+              Hello
+            </nav>
+          </Slide>
         )}
         <nav className="md:flex items-center justify-between gap-x-8 hidden ">
           <div className="flex items-center justify-start space-x-5">
