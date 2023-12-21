@@ -16,6 +16,7 @@
     "@mantine/hooks": "^7.3.0",
     "@mantine/modals": "^7.3.0",
     "@mantinex/mantine-logo": "^1.0.1",
+    "@react-google-maps/api": "^2.19.2",
     "embla-carousel-react": "^7.1.0",
     "next": "14.0.3",
     "react": "^18",

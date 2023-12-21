@@ -60,7 +60,7 @@
         rgba(0, 0, 0, 1) 0%,
         rgba(0, 0, 0, 1) 100%
       ),
-      url("./assets/images/audiencehands.jpeg"), lightgray 10%;
+      url("./assets/images/audiencehands.jpg"), lightgray 10%;
   }
   .contact_hero {
     @apply bg-center bg-no-repeat bg-cover h-[700px] !important;
@@ -82,7 +82,7 @@
         rgba(0, 0, 0, 0.36) 0%,
         rgba(0, 0, 0, 0.36) 100%
       ),
-      url("./assets/images/hands.jpeg"), lightgray 50%;
+      url("./assets/images/hands.jpg"), lightgray 50%;
   }
   .expression_box {
     @apply bg-center bg-no-repeat bg-cover h-[720px] !important;
@@ -108,7 +108,7 @@
         rgba(0, 0, 0, 0.8) 80%,
         rgba(0, 0, 0, 0.8) 100%
       ),
-      url("./assets/images/kids.jpeg"), lightgray 90%;
+      url("./assets/images/kids.jpg"), lightgray 90%;
   }
   .training_hero {
     @apply bg-center bg-no-repeat bg-cover h-[600px] !important;
@@ -121,7 +121,7 @@
         rgba(0, 0, 0, 0.7) 80%,
         rgba(0, 0, 0, 0.8) 100%
       ),
-      url("./assets/images/climb-hill.jpeg"), lightgray 90%;
+      url("./assets/images/climb-hill.jpg"), lightgray 90%;
   }
 
   .mission_img {
@@ -134,6 +134,11 @@
   }
   .activities_table {
     @apply grid md:grid-cols-3 lg:grid-cols-3 justify-center items-center py-10 md:py-6;
+  }
+
+  .map-container {
+    height: 100%;
+    width: 100%;
   }
 }
 
