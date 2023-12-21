@@ -18,10 +18,10 @@ const Contact = () => {
         <div className="lg-container space-y-14">
           <ul className="locations mx-auto flex flex-col md:flex-row items-center justify-center gap-y-5 md:gap-y-0 gap-x-10 lg:gap-x-14">
             {[
-              { id: 0, title: "HQ, Lagos Island" },
+              { id: 0, title: "HQ, Lekki Phase 1" },
               { id: 1, title: "Abuja" },
               { id: 2, title: "Cotonou" },
-              { id: 3, title: "Mainland - Lagos" },
+              { id: 3, title: "Mainland, Lagos" },
               { id: 4, title: "London, UK" },
             ].map(({ id, title }) => (
               <li key={id} className="font-semibold cursor-pointer lg:text-lg">
@@ -31,8 +31,8 @@ const Contact = () => {
           </ul>
           <section className="flex flex-col justify-center gap-y-10">
             <Image src="/map.png" alt="map" width={1881} height={852} />
-            <div className="grid grid-cols-2 md:grid-cols-3 cleargap-x-10">
-              <div className="space-y-2 md:col-span-2">
+            <div className="grid grid-cols-3 cleargap-x-10">
+              <div className="space-y-2 col-span-2">
                 <h4 className="md:text-lg lg:text-2xl">
                   Visit the Logic Center
                 </h4>
