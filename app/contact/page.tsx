@@ -15,7 +15,7 @@ const Contact = () => {
       </section>
 
       <section className="lg-section-white">
-        <div className="lg-container space-y-8">
+        <div className="lg-container space-y-14">
           <ul className="locations mx-auto flex items-center justify-center gap-x-14">
             {[
               { id: 0, title: "HQ, Lagos Island" },
