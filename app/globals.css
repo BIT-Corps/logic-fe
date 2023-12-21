@@ -44,6 +44,7 @@
     border-bottom: 2px solid #aeaeae !important;
     border-radius: 0px !important;
   }
+
   .mantine-Accordion-control {
     @apply bg-lg-dark text-lg-white !important;
   }
@@ -57,8 +58,10 @@
     @apply bg-center bg-no-repeat bg-cover object-cover h-[700px] !important;
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 100%
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.6) 20%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.6) 100%
       ),
       url("./assets/images/audiencehands.jpg"), lightgray 10%;
   }
@@ -134,11 +137,6 @@
   }
   .activities_table {
     @apply grid md:grid-cols-3 lg:grid-cols-3 justify-center items-center py-10 md:py-6;
-  }
-
-  .map-container {
-    height: 100%;
-    width: 100%;
   }
 }
 

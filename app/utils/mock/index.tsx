@@ -37,6 +37,39 @@ export const SMLinks = [
   { id: 3, icon: <FaTwitter /> },
 ];
 
+export const FAQ = [
+  {
+    id: 0,
+    title: "How can I get involved in the church community?",
+    description:
+      "Share information about various ministries, groups, or volunteer opportunities within the church. Include details on how newcomers can join and participate.",
+  },
+  {
+    id: 1,
+    title: "Is there a children's or youth program?",
+    description:
+      "Share information about various ministries, groups, or volunteer opportunities within the church. Include details on how newcomers can join and participate.",
+  },
+  {
+    id: 2,
+    title: "How can I request pastoral care or counseling?",
+    description:
+      "Share information about various ministries, groups, or volunteer opportunities within the church. Include details on how newcomers can join and participate.",
+  },
+  {
+    id: 3,
+    title: "How can I request pastoral care or counseling?",
+    description:
+      "Share information about various ministries, groups, or volunteer opportunities within the church. Include details on how newcomers can join and participate.",
+  },
+  {
+    id: 4,
+    title: "How can I request pastoral care or counseling?",
+    description:
+      "Share information about various ministries, groups, or volunteer opportunities within the church. Include details on how newcomers can join and participate.",
+  },
+];
+
 export const LMT = [
   {
     id: 0,
