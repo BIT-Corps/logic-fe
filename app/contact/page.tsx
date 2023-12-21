@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const Contact = () => {
   return (
     <>
@@ -27,7 +29,9 @@ const Contact = () => {
               </li>
             ))}
           </ul>
-          <section className="border">Map</section>
+          <section className="border flex items-center justify-center">
+            <Image src="/map.png" alt="map" width={1881} height={852} />
+          </section>
         </div>
       </section>
     </>
