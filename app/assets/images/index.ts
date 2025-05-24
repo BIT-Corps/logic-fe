@@ -35,6 +35,6 @@ export { default as WorshipImg } from "./worship.jpeg";
 export * from "./PCherish";
 export * from "./PClark";
 export * from "./Plan";
-export * from "./PMaks";
+export * from "./pmaks";
 export * from "./PPC";
 export * from "./PPY";
