@@ -21,30 +21,36 @@ export default function Home() {
           <div className="uppercase">
             <h4 className="text-6xl">Weekly Activities</h4>
             <p className="text-neutral-200 font-semibold">
-              Equip yourself with our top rated sermons
+              Come, let us fellowship and commune together
             </p>
           </div>
 
           <section className="md:space-y-4">
             <div className="activities_table bg-lg-red-dark rounded-lg space-y-4">
-              <h4 className="md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center order-first">
-                Sunday Sermon
-              </h4>
-              <div className="text-center">
-                <h4 className="text-xl text-lg-gray-light">1st Service</h4>
-                <h5 className="text-4xl">8am - 10am</h5>
+              <div className="">
+                <h4 className="md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center order-first">
+                  Main Service
+                </h4>
+              </div>
+              <div className="text-center flex flex-row justify-center items-center md:flex-col gap-x-2">
+                <h4 className="text-xl text-lg-gray-light md:hidden lg:block">
+                  EVERY
+                </h4>
+                <h5 className="text-xl md:text-4xl">Sunday</h5>
               </div>
               <div className="text-center">
-                <h4 className="text-xl text-lg-gray-light">2nd Service</h4>
-                <h5 className="text-4xl">10am - 12am</h5>
+                <h5 className="text-4xl">8am - 10am</h5>
               </div>
             </div>
             <div className="activities_table space-y-4">
               <h4 className="md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
                 Midweek Koinonia
               </h4>
-              <div className="text-center">
-                <h5 className="text-xl md:text-4xl">Wednesdays</h5>
+              <div className="text-center flex flex-row justify-center items-center md:flex-col  gap-x-2">
+                <h4 className="text-xl text-lg-gray-light md:hidden lg:block">
+                  Every
+                </h4>
+                <h5 className="text-xl md:text-4xl">Wednesday</h5>
               </div>
               <div className="text-center">
                 <h5 className="text-4xl">6pm - 9pm</h5>
@@ -54,8 +60,11 @@ export default function Home() {
               <h4 className="md:pl-8 text-4xl md:text-2xl lg:text-4xl text-center">
                 Daily Koinonia
               </h4>
-              <div className="text-center">
-                <h5 className="text-xl md:text-4xl">Every Morning</h5>
+              <div className="text-center flex flex-row justify-center items-center md:flex-col gap-x-2">
+                <h4 className="text-xl text-lg-gray-light md:hidden lg:block">
+                  Every
+                </h4>
+                <h5 className="text-xl md:text-4xl">Morning</h5>
               </div>
               <div className="text-center">
                 <h5 className="text-4xl">6am - 7pm</h5>

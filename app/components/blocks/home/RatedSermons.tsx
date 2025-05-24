@@ -19,7 +19,7 @@ const RatedSermons = () => {
           </p>
         </div>
 
-        <section className="grid lg:grid-cols-3 gap-y-10 lg:gap-y-0 md:gap-x-8 pt-14">
+        <section className="grid lg:grid-cols-3 gap-y-10 md:gap-x-8 pt-14">
           {sermons.map(({ id, title, subTitle, image, videoId }) => (
             <div key={id}>
               <div className="relative" onClick={() => setOpen(true)}>
