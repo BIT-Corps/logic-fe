@@ -1,12 +1,12 @@
 import {
   AbujaImg,
   CrossPositionImg,
+  DontMixItImg,
   EveningChurchImg,
   HoustonImg,
   MainlandImg,
-  MKImg,
   PortharcourtImg,
-  TDIALImg,
+  SonshipImg,
   UkImg,
   WorshipImg,
 } from "@/app/assets";
@@ -66,12 +66,6 @@ export const expressions: TExpressions[] = [
     id: 9,
     name: "Evening Church",
     image: EveningChurchImg,
-    link: "/expressions/evening-church",
-  },
-  {
-    id: 10,
-    name: "Evening Church",
-    image: WorshipImg,
     link: "/expressions/evening-church",
   },
 ];
@@ -241,7 +235,7 @@ export const footerLinks = [
       {
         subId: 2,
         title:
-          "Block 115 T.F. Kuboye Road, By The Podium Event Centre, Marwa Bus stop Lekki Phase 1.",
+          "The LOGIC Center Block 115 T.F. Kuboye Road, By The Podium Event Centre, Marwa Bus Stop Lekki Phase 1.",
       },
     ],
   },
@@ -257,16 +251,37 @@ export const sermons: TRatedSermons[] = [
   },
   {
     id: 1,
-    title: "Morning Koinonia",
+    title: "Don't Mix It",
     subTitle: "Dr Flourish Peters",
-    image: MKImg,
-    videoId: "1aTPZdtY1Pg",
+    image: DontMixItImg,
+    videoId: "OhfIocWzF1A",
   },
   {
     id: 2,
-    title: "The Devil Is A Liar",
+    title: "Sonship",
     subTitle: "Dr Flourish Peters",
-    image: TDIALImg,
+    image: SonshipImg,
+    videoId: "ArLa3etPzZs",
+  },
+  {
+    id: 0,
+    title: "Cross Position",
+    subTitle: "Dr Flourish Peters",
+    image: CrossPositionImg,
     videoId: "1aTPZdtY1Pg",
+  },
+  {
+    id: 1,
+    title: "Don't Mix It",
+    subTitle: "Dr Flourish Peters",
+    image: DontMixItImg,
+    videoId: "OhfIocWzF1A",
+  },
+  {
+    id: 2,
+    title: "Sonship",
+    subTitle: "Dr Flourish Peters",
+    image: SonshipImg,
+    videoId: "ArLa3etPzZs",
   },
 ];

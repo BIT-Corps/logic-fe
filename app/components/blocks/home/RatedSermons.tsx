@@ -13,7 +13,7 @@ const RatedSermons = () => {
     <div className="lg-section-white">
       <div className="lg-container">
         <div className="uppercase">
-          <h4 className="text-5xl md:text-6xl">Top Rated Sermons</h4>
+          <h4 className="text-5xl md:text-6xl">Sermons</h4>
           <p className="text-gray-700">
             Equip yourself with our top rated sermons
           </p>
