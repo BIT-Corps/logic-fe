@@ -21,7 +21,7 @@ const Footer = () => {
               />
             </div>
             <div className="">
-              <p className="font-semibold text-lg-gray-light w-full md:w-10/12">
+              <p className="font-semibold text-lg-gray-light w-full md:w-10/12 text-justify">
                 The <span className="font-bold text-sm">LOGIC Church</span>{" "}
                 stands as a beacon of The Love Of God In Christ. We welcome all
                 individuals seeking God&apos;s love and our doors are open to

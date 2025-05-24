@@ -1,9 +1,13 @@
 import {
-  AudienceImg,
+  AbujaImg,
   CrossPositionImg,
+  EveningChurchImg,
+  HoustonImg,
+  MainlandImg,
   MKImg,
-  RaisedHandsImg,
+  PortharcourtImg,
   TDIALImg,
+  UkImg,
   WorshipImg,
 } from "@/app/assets";
 import { TExpressions, TRatedSermons } from "@/app/types";
@@ -11,22 +15,64 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export const expressions: TExpressions[] = [
   {
-    id: 0,
+    id: 1,
     name: "Abuja",
-    image: AudienceImg,
+    image: AbujaImg,
     link: "/expressions/abuja",
   },
   {
-    id: 1,
-    name: "Lagos, Mainland",
-    image: RaisedHandsImg,
+    id: 2,
+    name: "Lagos Mainland",
+    image: MainlandImg,
     link: "/expressions/mainland",
   },
   {
-    id: 2,
-    name: "United Kingdom",
-    image: WorshipImg,
+    id: 3,
+    name: "PortHarcourt",
+    image: PortharcourtImg,
     link: "/expressions/uk",
+  },
+  {
+    id: 4,
+    name: "London",
+    image: UkImg,
+    link: "/expressions/uk",
+  },
+  {
+    id: 5,
+    name: "Houston",
+    image: HoustonImg,
+    link: "/expressions/houston",
+  },
+  {
+    id: 6,
+    name: "Cotonou",
+    image: WorshipImg,
+    link: "/expressions/cotonou",
+  },
+  {
+    id: 7,
+    name: "Ghana",
+    image: WorshipImg,
+    link: "/expressions/ghana",
+  },
+  {
+    id: 8,
+    name: "Ireland",
+    image: WorshipImg,
+    link: "/expressions/ireland",
+  },
+  {
+    id: 9,
+    name: "Evening Church",
+    image: EveningChurchImg,
+    link: "/expressions/evening-church",
+  },
+  {
+    id: 10,
+    name: "Evening Church",
+    image: WorshipImg,
+    link: "/expressions/evening-church",
   },
 ];
 
@@ -195,7 +241,7 @@ export const footerLinks = [
       {
         subId: 2,
         title:
-          "4, Oriwu Street, Beside Petrocam Fueling Station, Lekki phase 1, Lagos.",
+          "Block 115 T.F. Kuboye Road, By The Podium Event Centre, Marwa Bus stop Lekki Phase 1.",
       },
     ],
   },
