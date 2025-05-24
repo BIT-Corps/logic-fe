@@ -5,6 +5,7 @@ import {
   EveningChurchImg,
   HoustonImg,
   MainlandImg,
+  PMaksImg,
   PortharcourtImg,
   SonshipImg,
   UkImg,
@@ -283,5 +284,53 @@ export const sermons: TRatedSermons[] = [
     subTitle: "Dr Flourish Peters",
     image: SonshipImg,
     videoId: "ArLa3etPzZs",
+  },
+];
+
+export const pastors = [
+  {
+    id: 1,
+    name: "Pastor Amaka",
+    image: PMaksImg,
+  },
+  {
+    id: 2,
+    name: "Pastor Obinna",
+    image: "",
+  },
+  {
+    id: 3,
+    name: "Rev. Clarkson",
+    image: "",
+  },
+  {
+    id: 4,
+    name: "Pastor Lanre",
+    image: "",
+  },
+  {
+    id: 5,
+    name: "Pastor Cherish",
+    image: "",
+  },
+  {
+    id: 6,
+    name: "Pastor Paul",
+    image: "",
+  },
+  {
+    id: 7,
+    name: "Pastor Marina",
+    image: "",
+  },
+  {
+    id: 8,
+    name: "Pastor Phillip",
+    image: "",
+  },
+  {
+    id: 9,
+    name: "Pastor Phillip",
+    image: "",
   },
 ];

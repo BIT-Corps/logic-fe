@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { PMaksImg } from "../assets";
-import { POP } from "../utils";
+import { pastors, POP } from "../utils";
 
 const About = () => {
   return (
@@ -133,18 +133,21 @@ const About = () => {
             </h4>
           </div>
 
-          <section className="border-4 p-10">
-            <div className="grid grid-cols-3 gap-10">
-              <div className="cont_1">
-                <Image
-                  src={PMaksImg}
-                  alt=""
-                  className="h-[500px] w-full object-top object-cover"
-                />
-              </div>
-              <div className="cont_1 h-24 border"></div>
-              <div className="cont_1 h-24 border"></div>
-              <div className="cont_1 h-24 border"></div>
+          <section className="mt-20">
+            <div className="grid grid-cols-3 gap-y-10">
+              {pastors.map(({ id, name, image }) => (
+                <div key={id}>
+                  <div>
+                    <Image
+                      src={PMaksImg}
+                      alt=""
+                      className="h-[500px] w-5/6 object-top object-cover"
+                    />
+                  </div>
+                  <h4>{name}</h4>
+                  <h6>Assistant Pastor</h6>
+                </div>
+              ))}
             </div>
           </section>
         </div>
