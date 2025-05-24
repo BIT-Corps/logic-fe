@@ -19,7 +19,7 @@ const About = () => {
 
       <section className="lg-section-white mt-10">
         <div className="lg-container">
-          <section className="grid grid-cols-2 gap-x-20">
+          <section className="grid grid-cols-1 gap-y-10 lg:gap-y-0 lg:grid-cols-2 gap-x-20">
             <div className="flex flex-col justify-center items-start gap-y-6 order-first lg:order-none">
               <div className="space-y-2">
                 <h3 className="text-xl bg-lg-red text-lg-white py-2 px-4 rounded w-fit">
@@ -133,7 +133,7 @@ const About = () => {
           </div>
 
           <section className="mt-20">
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
               {pastors.map(({ id, name, image, role }) => (
                 <div key={id} className="space-y-4">
                   <div>
@@ -165,9 +165,9 @@ const About = () => {
             </p>
           </div>
 
-          <section className="grid grid-cols-2 gap-y-20">
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-y-20">
             {communities.map(({ id, title, description }) => (
-              <div className="flex flex-col w-5/6 space-y-6" key={id}>
+              <div className="flex flex-col w-full lg:w-5/6 space-y-6" key={id}>
                 <div className="border h-[300px]">
                   <div className="" />
                 </div>

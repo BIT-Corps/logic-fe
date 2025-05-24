@@ -45,7 +45,17 @@ const TopNav = ({ opened, toggle }: Props) => {
         {opened && (
           <Slide left>
             <nav className="absolute top-20 w-full left-0 h-96 bg-lg-dark z-30 p-8">
-              Hello
+              <div className="flex flex-col justify-between h-full">
+                {links.map((link) => (
+                  <Link
+                    key={link.link}
+                    href={link.link}
+                    className="text-lg cursor-pointer text-bebas"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </nav>
           </Slide>
         )}
