@@ -1,1 +1,1 @@
-export { default as PCherish } from "./PCherish.jpeg";
+export { default as PCherishImg } from "./PCherish.jpeg";

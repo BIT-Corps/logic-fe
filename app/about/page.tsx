@@ -140,7 +140,7 @@ const About = () => {
                     <Image
                       src={image ?? ""}
                       alt=""
-                      className="h-[500px] w-full object-top object-cover"
+                      className="h-[500px] w-full object-top object-cover rounded"
                     />
                   </div>
                   <div className="space-y-0">
