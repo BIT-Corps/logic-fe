@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { pastors, POP } from "../utils";
+import { communities, pastors, POP } from "../utils";
 
 const About = () => {
   return (
@@ -155,7 +155,7 @@ const About = () => {
       </section>
 
       <section className="lg-section-white">
-        <div className="lg-container space-y-20">
+        <div className="lg-container space-y-14">
           <div className="text-center uppercase space-y-1.5">
             <h4 className="text-4xl lg:text-6xl text-lg-red space-y-2">
               Our Communities
@@ -165,7 +165,19 @@ const About = () => {
             </p>
           </div>
 
-          <section className="border-2">Hello World</section>
+          <section className="grid grid-cols-2 gap-y-20">
+            {communities.map(({ id, title, description }) => (
+              <div className="flex flex-col w-5/6 space-y-6" key={id}>
+                <div className="border h-[300px]">
+                  <div className="" />
+                </div>
+                <div>
+                  <h4 className="text-3xl">{title}</h4>
+                  <p className="text-justify">{description}</p>
+                </div>
+              </div>
+            ))}
+          </section>
         </div>
       </section>
     </>

@@ -350,3 +350,30 @@ export const pastors = [
     role: "Global Head of SWAT",
   },
 ];
+
+export const communities = [
+  {
+    id: 1,
+    title: "Women In Christ",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus incidunt dolorem nemo quisquam veritatis esse soluta. Fugiat, repellat iste! Sed et hic natus omnis. Culpa cupiditate voluptatibus omnis! Architecto?",
+  },
+  {
+    id: 2,
+    title: "Men In Christ",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus incidunt dolorem nemo quisquam veritatis esse soluta. Fugiat, repellat iste! Sed et hic natus omnis. Culpa cupiditate voluptatibus omnis! Architecto?",
+  },
+  {
+    id: 3,
+    title: "Kids-zone",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus incidunt dolorem nemo quisquam veritatis esse soluta. Fugiat, repellat iste! Sed et hic natus omnis. Culpa cupiditate voluptatibus omnis! Architecto?",
+  },
+  {
+    id: 4,
+    title: "Singles & Complete",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus incidunt dolorem nemo quisquam veritatis esse soluta. Fugiat, repellat iste! Sed et hic natus omnis. Culpa cupiditate voluptatibus omnis! Architecto?",
+  },
+];
