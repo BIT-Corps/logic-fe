@@ -128,15 +128,23 @@
   }
 
   .mission_img {
-    @apply h-[480px] border bg-center bg-no-repeat bg-cover !important;
-    background: url("./assets/images/mission.jpeg"), lightgray 50%;
+    @apply h-[480px] bg-center bg-no-repeat bg-cover !important;
+    background: url("./assets/images/members.jpeg"), lightgray 50%;
   }
   .vision_img {
-    @apply h-[480px] border bg-center bg-no-repeat bg-cover !important;
-    background: url("./assets/images/vision.jpeg"), lightgray 50%;
+    @apply h-[480px] bg-center bg-no-repeat bg-cover !important;
+    background: url("./assets/images/PFlo/pflo_preaching.jpeg"), lightgray 50%;
   }
   .activities_table {
     @apply grid md:grid-cols-3 lg:grid-cols-3 justify-center items-center py-10 md:py-6;
+  }
+  .pflo_img {
+    @apply h-[700px] bg-center bg-no-repeat bg-cover rounded !important;
+    background: url("./assets/images/PFlo/PFlo2.jpeg"), lightgray 50%;
+  }
+  .pmaks_img {
+    @apply h-[300px] bg-center bg-no-repeat bg-cover rounded !important;
+    background: url("./assets/images/pmaks/pmaks.jpeg"), lightgray 50%;
   }
 }
 
@@ -151,6 +159,6 @@
     @apply px-6 md:px-24 py-20 md:py-36 bg-lg-red;
   }
   .lg-section-black {
-    @apply bg-lg-dark text-lg-white;
+    @apply bg-lg-dark text-lg-white px-6 md:px-24 py-20 md:py-36;
   }
 }

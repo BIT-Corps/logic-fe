@@ -2,15 +2,14 @@ import { LogicLogo } from "@/app/assets";
 import { Burger, Button } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import Slide from "react-reveal/Slide";
 
 const links = [
+  { link: "/about", label: "About Us" },
   { link: "/expressions", label: "Expressions" },
   { link: "/resources", label: "Resources" },
   { link: "/trainings", label: "Trainings" },
   { link: "/community", label: "Events" },
-  { link: "/about", label: "About Us" },
   { link: "/contact", label: "Contact" },
 ];
 
@@ -20,7 +19,7 @@ type Props = {
 };
 
 const TopNav = ({ opened, toggle }: Props) => {
-  const [menuIsOpened, setMenuIsOpened] = useState<boolean>(false);
+  // const [menuIsOpened, setMenuIsOpened] = useState<boolean>(false);
   // const [opened, { toggle }] = useDisclosure();
 
   return (

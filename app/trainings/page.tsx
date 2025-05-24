@@ -61,7 +61,7 @@ const Trainings = () => {
 
           <div className="space-y-16">
             <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
-              <h2 className="text-6xl">Logic Minister Training</h2>
+              <h2 className="text-6xl">Logic Discipleship Class</h2>
               <p className="text-sm lg:text-lg">
                 The Logic Minister Training is a specialized program designed to
                 equip and empower church ministers with the necessary skills and
@@ -101,7 +101,7 @@ const Trainings = () => {
 
           <div className="space-y-16">
             <div className="flex flex-col items-center justify-center lg:w-7/12 mx-auto text-center space-y-2">
-              <h2 className="text-6xl">Logic Foundation Class</h2>
+              <h2 className="text-6xl">Logic Minister Training</h2>
               <p className="text-sm lg:text-lg">
                 The <strong>L.O.G.I.C</strong> Foundation Class is a four (4)
                 week intensive development program aimed at driving in the
@@ -123,7 +123,7 @@ const Trainings = () => {
                   variant="separated"
                   defaultValue="What is LFC?"
                 >
-                  {LFC.map(({ id, title, description, subItems }) => (
+                  {LMT.map(({ id, title, description }) => (
                     <Accordion.Item value={title} key={id}>
                       <Accordion.Control>
                         <h4 className="text-3xl">{title}</h4>

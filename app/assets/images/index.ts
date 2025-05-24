@@ -29,3 +29,5 @@ export { default as TDIALImg } from "./TDIAL.webp";
 export { default as UkImg } from "./uk.jpeg";
 export { default as WordImg } from "./word.jpeg";
 export { default as WorshipImg } from "./worship.jpeg";
+
+export * from "./pmaks";
