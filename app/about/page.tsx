@@ -172,7 +172,7 @@ const About = () => {
                   <div className="" />
                 </div>
                 <div>
-                  <h4 className="text-3xl">{title}</h4>
+                  <h4 className="text-3xl text-lg-red">{title}</h4>
                   <p className="text-justify">{description}</p>
                 </div>
               </div>
