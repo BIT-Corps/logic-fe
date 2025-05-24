@@ -3,6 +3,7 @@
 import { sermons } from "@/app/utils";
 import { Button } from "@mantine/core";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { GoPlay } from "react-icons/go";
 import ModalVideo from "react-modal-video";
@@ -51,14 +52,16 @@ const RatedSermons = () => {
         </section>
 
         <div className="w-full mt-24 flex items-center justify-center upper">
-          <Button
-            variant="filled"
-            color="light-red"
-            size="lg"
-            className="uppercase"
-          >
-            Watch more on YouTube
-          </Button>
+          <Link href="https://www.youtube.com/@TheLOGICChurch">
+            <Button
+              variant="filled"
+              color="light-red"
+              size="lg"
+              className="uppercase"
+            >
+              Watch more on YouTube
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
