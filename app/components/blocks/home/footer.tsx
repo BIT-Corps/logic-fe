@@ -57,7 +57,7 @@ const Footer = () => {
         </section>
 
         <section className="flex flex-col lg:flex-row items-center justify-between w-full py-10 text-lg space-y-5">
-          <p>Copyright &copy; 2023 The LOGIC Church.</p>
+          <p>Copyright &copy; 2025 The LOGIC Church. All Rights Reserved</p>
           <IconContext.Provider value={{ size: "28px" }}>
             <div className="hidden md:flex items-center justify-center gap-x-8">
               {SMLinks.map(({ icon, id }) => (

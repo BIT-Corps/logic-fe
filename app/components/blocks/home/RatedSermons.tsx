@@ -1,6 +1,7 @@
 "use client";
 
 import { sermons } from "@/app/utils";
+import { Button } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
 import { GoPlay } from "react-icons/go";
@@ -48,6 +49,17 @@ const RatedSermons = () => {
             </div>
           ))}
         </section>
+
+        <div className="w-full mt-24 flex items-center justify-center upper">
+          <Button
+            variant="filled"
+            color="light-red"
+            size="lg"
+            className="uppercase"
+          >
+            Watch more on YouTube
+          </Button>
+        </div>
       </div>
     </div>
   );
