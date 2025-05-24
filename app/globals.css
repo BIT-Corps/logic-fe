@@ -142,10 +142,6 @@
     @apply h-[700px] bg-center bg-no-repeat bg-cover rounded !important;
     background: url("./assets/images/PFlo/PFlo2.jpeg"), lightgray 50%;
   }
-  .pmaks_img {
-    @apply h-[300px] bg-center bg-no-repeat bg-cover rounded !important;
-    background: url("./assets/images/pmaks/pmaks.jpeg"), lightgray 50%;
-  }
 }
 
 @layer utilities {

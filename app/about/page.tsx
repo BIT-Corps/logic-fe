@@ -155,7 +155,18 @@ const About = () => {
       </section>
 
       <section className="lg-section-white">
-        <div className="lg-container space-y-36">Hello World</div>
+        <div className="lg-container space-y-20">
+          <div className="text-center uppercase space-y-1.5">
+            <h4 className="text-4xl lg:text-6xl text-lg-red space-y-2">
+              Our Communities
+            </h4>
+            <p className="text-sm w-full lg:w-5/12 mx-auto font-semibold">
+              We are much more than a church, a place to grow and be loved.
+            </p>
+          </div>
+
+          <section className="border-2">Hello World</section>
+        </div>
       </section>
     </>
   );
