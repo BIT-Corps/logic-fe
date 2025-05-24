@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { PMaksImg } from "../assets";
 import { pastors, POP } from "../utils";
 
 const About = () => {
@@ -134,18 +133,20 @@ const About = () => {
           </div>
 
           <section className="mt-20">
-            <div className="grid grid-cols-3 gap-y-10">
-              {pastors.map(({ id, name, image }) => (
-                <div key={id}>
+            <div className="grid grid-cols-3 gap-10">
+              {pastors.map(({ id, name, image, role }) => (
+                <div key={id} className="space-y-4">
                   <div>
                     <Image
-                      src={PMaksImg}
+                      src={image ?? ""}
                       alt=""
-                      className="h-[500px] w-5/6 object-top object-cover"
+                      className="h-[500px] w-full object-top object-cover"
                     />
                   </div>
-                  <h4>{name}</h4>
-                  <h6>Assistant Pastor</h6>
+                  <div className="space-y-0">
+                    <h4 className="text-4xl">{name}</h4>
+                    <p>{role}</p>
+                  </div>
                 </div>
               ))}
             </div>

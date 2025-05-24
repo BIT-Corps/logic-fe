@@ -62,7 +62,7 @@ const TopNav = ({ opened, toggle }: Props) => {
             ))}
           </div>
           <Button variant="filled" color="light-red" size="sm">
-            Donate
+            Give
           </Button>
         </nav>
       </section>

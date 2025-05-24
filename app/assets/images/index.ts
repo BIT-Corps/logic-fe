@@ -30,4 +30,7 @@ export { default as UkImg } from "./uk.jpeg";
 export { default as WordImg } from "./word.jpeg";
 export { default as WorshipImg } from "./worship.jpeg";
 
+export * from "./PCherish";
+export * from "./PClark";
+export * from "./Plan";
 export * from "./pmaks";
